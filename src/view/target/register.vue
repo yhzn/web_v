@@ -18,11 +18,8 @@
   import headTitle from '@/components/head_title'
   import headTitleIcon from '../../../static/image/icon/head_title.png'
   import register from '../../../static/image/register.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
   let data={
     head:'挂号统计',
     tips:'前十名门诊科室数据统计表'

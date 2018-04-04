@@ -18,11 +18,8 @@
   import headTitle from '@/components/head_title'
   import headTitleIcon from '../../../static/image/icon/head_title.png'
   import norm from '../../../static/image/norm.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
   let data={
     head:'年度指标统计',
     tips:'年度指标及目标完成值统计数据'

@@ -70,7 +70,27 @@ img[src=""]{
   margin: 0 auto;
 }
 
-
+.txt .title-con{
+  color:#fff;
+  height:36px;
+  background:#426a97;
+  margin-left:-10px;
+  margin-right:-10px;
+}
+.txt .title-con div:nth-child(1){
+  float:left;
+  width:22px;
+  margin-left:10px;
+  margin-top:6px;
+}
+.txt .title-con div:nth-child(2){
+  height:36px;
+  line-height:36px;
+  margin-left:42px;
+}
+.bg-theme{
+  background: #1d4761;
+}
 
 .clearFix{
   zoom:1;

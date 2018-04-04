@@ -9,12 +9,8 @@
 <script>
   import menuList from '@/components/menu_list.vue'
   import headCon from '@/components/head.vue'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-
-  }
   let menuData={
     head:'月质量简报',
     tips:'每个月各条线质量情况的汇总',

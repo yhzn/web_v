@@ -16,12 +16,8 @@
 <script>
   import headCon from '@/components/head.vue'
   import controlCenter from '../../../static/image/control_center.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualitycontrol/qualitycontrol',
-    text:"医疗质量信息管理系统"
-
-  }
   export default {
     data () {
       return {

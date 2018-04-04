@@ -18,11 +18,8 @@
   import headCon from '@/components/head.vue'
   import anaImg from '../../../static/image/nov_report.png'
 
-  let headData={
-    href:'/evaluation/report',
-    text:"医疗质量信息管理系统"
+  import headData from '@/data/head_data.json'
 
-  }
   export default {
     data () {
       return {

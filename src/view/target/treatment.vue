@@ -18,11 +18,8 @@
   import headTitle from '@/components/head_title'
   import headTitleIcon from '../../../static/image/icon/head_title.png'
   import treatment from '../../../static/image/treatment.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
   let data={
     head:'门诊急诊统计',
     tips:'可支持多院区实时控制管理'

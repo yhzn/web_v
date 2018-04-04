@@ -19,11 +19,8 @@
 </template>
 <script>
   import headCon from '@/components/head.vue'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/notice/notice',
-    text:"医疗质量信息管理系统"
-  }
   export default {
     data () {
       return {

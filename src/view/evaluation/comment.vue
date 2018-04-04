@@ -7,7 +7,6 @@
       <div class="head">
         2017年第一季度抗生素临床合理用药讲评
       </div>
-
       <div class="img-one">
         <img src="" alt="" v-lazy="anaImg">
       </div>
@@ -17,12 +16,8 @@
 <script>
   import headCon from '@/components/head.vue'
   import anaImg from '../../../static/image/medical_quality.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/evaluation/medicalquality',
-    text:"医疗质量信息管理系统"
-
-  }
   export default {
     data () {
       return {

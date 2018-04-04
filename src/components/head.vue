@@ -27,11 +27,9 @@
 </style>
 <template>
   <div class="head clearFix">
-    <router-link :to="headData.href">
-      <div class="back">
+      <div class="back" @click="routerGo">
         <span>&lt</span>返回
       </div>
-    </router-link>
     <div>
       {{headData.text}}
     </div>
@@ -44,6 +42,11 @@ export default {
 
     }
   },
-  props:['headData']
+  props:['headData'],
+  methods:{
+    routerGo () {
+      this.$router.go(-1);
+    }
+  }
 }
 </script>

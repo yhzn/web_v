@@ -16,12 +16,8 @@
 <script>
   import headCon from '@/components/head.vue'
   import confluence from '../../../static/image/confluence.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/feedback/feedback',
-    text:"医疗质量信息管理系统"
-
-  }
   export default {
     data () {
       return {

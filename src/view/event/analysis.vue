@@ -28,12 +28,8 @@
 <script>
   import headCon from '@/components/head.vue'
   import anaImg from '../../../static/image/ana.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/event/event',
-    text:"医疗质量信息管理系统"
-
-  }
   export default {
     data () {
       return {

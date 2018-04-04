@@ -17,11 +17,8 @@
   import headCon from '@/components/head.vue'
   import anaImg from '../../../static/image/check_quality.png'
 
-  let headData={
-    href:'/evaluation/check',
-    text:"医疗质量信息管理系统"
+  import headData from '@/data/head_data.json'
 
-  }
   export default {
     data () {
       return {
