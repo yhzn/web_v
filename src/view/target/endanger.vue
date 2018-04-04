@@ -23,11 +23,8 @@
   import headTitleIcon from '../../../static/image/icon/head_title.png'
   import endangerOne from '../../../static/image/endanger_1.png'
   import endangerSec from '../../../static/image/endanger_2.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
   let data={
     head:'危机值管理',
     tips:'提供危及值的实时统计'

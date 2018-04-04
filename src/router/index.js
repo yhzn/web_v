@@ -43,9 +43,39 @@ import report from '@/view/evaluation/report'
 import comment from '@/view/evaluation/comment'
 import novReport from '@/view/evaluation/nov_report'
 
+import medicalTechnology from '@/view/medicaltechnology/medical_technology.vue'
+import fileFile from '@/view/medicaltechnology/file_file.vue'
+import fileArchive from '@/view/medicaltechnology/file_archive.vue'
+import fileArchiveNew from '@/view/medicaltechnology/file_archive_new.vue'
+
 Vue.use(Router)
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'HomePage',
+      component: HomePage
+    },
+    {
+      path: '/medicaltechnology/file_file',
+      name: 'fileFile',
+      component: fileFile
+    },
+    {
+      path: '/medicaltechnology/file_archive',
+      name: 'fileArchive',
+      component: fileArchive
+    },
+    {
+      path: '/medicaltechnology/file_archive_new',
+      name: 'fileArchiveNew',
+      component: fileArchiveNew
+    },
+    {
+      path: '/medicaltechnology/medicaltechnology',
+      name: 'medicalTechnology',
+      component: medicalTechnology
+    },
     {
       path: '/qrCode',
       name: 'qrCode',
@@ -203,11 +233,6 @@ export default new Router({
     },
     {
       path: '/homePage',
-      name: 'HomePage',
-      component: HomePage
-    },
-    {
-      path: '/',
       name: 'HomePage',
       component: HomePage
     },

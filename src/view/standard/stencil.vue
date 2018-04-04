@@ -16,12 +16,8 @@
 <script>
   import headCon from '@/components/head.vue'
   import stencil from '../../../static/image/stencil.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/standard/standard',
-    text:"医疗质量信息管理系统"
-
-  }
   export default {
     data () {
       return {

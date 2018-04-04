@@ -28,10 +28,8 @@
   import hospitalOne from '../../../static/image/hospital_1.png'
   import hospitalSec from '../../../static/image/hospital_2.png'
   import hospitalThr from '../../../static/image/hospital_3.png'
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
+  import headData from '@/data/head_data.json'
+
   let data={
     head:'住院病人统计',
     tips:'可支持多院区实时控制管理'

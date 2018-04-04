@@ -18,11 +18,8 @@
   import headTitle from '@/components/head_title'
   import headTitleIcon from '../../../static/image/icon/head_title.png'
   import sche from '../../../static/image/sche.png'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
   let data={
     head:'科室排班',
     tips:'可看本院、今日、下月排班'

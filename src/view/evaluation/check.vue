@@ -167,10 +167,8 @@
   import lineBorderThr from '../../../static/image/border/line-border-3.png'
   import lineBorderFou from '../../../static/image/border/line-border-4.png'
   import lineBorderFiv from '../../../static/image/border/line-border-5.png'
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-  }
+  import headData from '@/data/head_data.json'
+
   let data={
     head:'内部质控-考核与反馈',
     tips:'每天医务部考察科室内容'

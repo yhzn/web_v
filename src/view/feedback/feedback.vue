@@ -9,12 +9,8 @@
 <script>
   import menuList from '@/components/menu_list.vue'
   import headCon from '@/components/head.vue'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-
-  }
   let menuData={
     head:'外来质控反馈',
     tips:'针对外来质控专家提出的问题，医院进行的整改方案',

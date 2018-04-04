@@ -9,12 +9,8 @@
 <script>
   import menuList from '@/components/menu_list.vue'
   import headCon from '@/components/head.vue'
+  import headData from '@/data/head_data.json'
 
-  let headData={
-    href:'/qualityPage',
-    text:"医疗质量信息管理系统"
-
-  }
   let menuData={
     head:'通知公告',
     tips:'日常工作下发信息，与OA系统无缝对接',
