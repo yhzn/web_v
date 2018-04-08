@@ -88,7 +88,6 @@ export default {
           s.active=false;
           return false
         },this)
-
       },this);
       // 选中项加标记
       this.secMenu[index].subList[subIndex].active=true;

@@ -16,12 +16,12 @@
     "active":true,
     "subList":[
       {
-        "href":"",
+        "href":"/medicaltechnology/med_applay",
         "active":true,
         "text":"新增申请（医生）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_approval_pending",
         "active":false,
         "text":"待审批列表（医生）"
       },

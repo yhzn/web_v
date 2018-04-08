@@ -47,6 +47,8 @@ import medicalTechnology from '@/view/medicaltechnology/medical_technology.vue'
 import fileFile from '@/view/medicaltechnology/file_file.vue'
 import fileArchive from '@/view/medicaltechnology/file_archive.vue'
 import fileArchiveNew from '@/view/medicaltechnology/file_archive_new.vue'
+import medApplay from '@/view/medicaltechnology/med_applay.vue'
+import approvalPending from '@/view/medicaltechnology/med_approval_pending.vue'
 
 Vue.use(Router)
 export default new Router({
@@ -56,6 +58,18 @@ export default new Router({
       name: 'HomePage',
       component: HomePage
     },
+    {
+      path: '/medicaltechnology/med_applay',
+      name: 'medApplay',
+      component: medApplay
+    },
+
+    {
+      path: '/medicaltechnology/med_approval_pending',
+      name: 'approvalPending',
+      component: approvalPending
+    },
+
     {
       path: '/medicaltechnology/file_file',
       name: 'fileFile',
