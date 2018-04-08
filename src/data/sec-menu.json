@@ -4,9 +4,24 @@
     "active":false,
     "subList":[
       {
-        "href":"",
+        "href":"/medicaltechnology/catalog_routine",
         "active":false,
-        "text":""
+        "text":"常规医疗技术目录"
+      },
+      {
+        "href":"/medicaltechnology/catalog_change",
+        "active":false,
+        "text":"转常规医疗技术目录"
+      },
+      {
+        "href":"/medicaltechnology/catalog_supervise",
+        "active":false,
+        "text":"监管医疗技术目录"
+      },
+      {
+        "href":"/medicaltechnology/catalog_stop",
+        "active":false,
+        "text":"终止医疗技术目录"
       }
     ]
 
@@ -26,32 +41,32 @@
         "text":"待审批列表（医生）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_check",
         "active":false,
         "text":"考核提交表（医生）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_check_approval",
         "active":false,
         "text":"科室审批考核提交表"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_approval",
         "active":false,
         "text":"审批列表（医务部）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_summary",
         "active":false,
         "text":"实施小结未提交列表（医务部）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_inspection_matter",
         "active":false,
         "text":"督查与评估（医务部）"
       },
       {
-        "href":"",
+        "href":"/medicaltechnology/med_inspection_school",
         "active":false,
         "text":"督查与评估（院领导）"
       }
@@ -85,10 +100,31 @@
     "active":false,
     "subList":[
       {
-        "href":"",
+        "href":"/medicaltechnology/qualification_applay",
         "active":false,
-        "text":""
+        "text":"医生资质申请（医生）"
+      },
+      {
+        "href":"/medicaltechnology/qualification_exa",
+        "active":false,
+        "text":"医生资质审批（医务部）"
+      },
+      {
+        "href":"/medicaltechnology/qualification_management",
+        "active":false,
+        "text":"医生资质管理"
+      },
+      {
+        "href":"/medicaltechnology/qualification_technology",
+        "active":false,
+        "text":"包含离职人员医疗技术"
+      },
+      {
+        "href":"/medicaltechnology/qualification_inquiry",
+        "active":false,
+        "text":"医生资质查询（按科室）"
       }
+
     ]
 
   },
@@ -97,9 +133,24 @@
     "active":false,
     "subList":[
       {
-        "href":"",
+        "href":"/medicaltechnology/bonus_grant",
         "active":false,
-        "text":""
+        "text":"医疗技术启动经费发放"
+      },
+      {
+        "href":"/medicaltechnology/bonus_detail",
+        "active":false,
+        "text":"医疗技术发放情况明细表"
+      },
+      {
+        "href":"/medicaltechnology/bonus_state",
+        "active":false,
+        "text":"医疗技术发放请况完成明细表"
+      },
+      {
+        "href":"/medicaltechnology/bonus_sign",
+        "active":false,
+        "text":"发放额度签收文件"
       }
     ]
 
@@ -109,10 +160,21 @@
     "active":false,
     "subList":[
       {
-        "href":"",
+        "href":"/medicaltechnology/hospital_detail",
         "active":false,
-        "text":""
+        "text":"三级综合医院医疗技术明细"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"三级综合医院科室考核内容列表"
+      },
+      {
+        "href":"/medicaltechnology/hospital_gather",
+        "active":false,
+        "text":"三级综合医院医疗技术分数汇总"
       }
+
     ]
 
   }
