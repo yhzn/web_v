@@ -5,9 +5,8 @@
 }
 .sec-level-menu .sec-menu-title{
   margin:0;
-  padding:0 10px;
-  height: 36px;
-  line-height: 36px;
+  padding:12px 10px;
+  font-size:15px;
   background:#3b6590;
   border-bottom:1px solid #89b75d;
 }
@@ -16,7 +15,7 @@
   margin-left:10px;
 }
 .sec-level-menu .sec-menu-title span.icon{
-  top:10px;
+  top:3px;
 }
 .sec-level-menu .sec-menu-title.active{
   background:#11294b;
@@ -29,8 +28,8 @@
   margin:0 10px;
 }
 .sec-level-menu .sub-menu li{
-  height: 36px;
-  line-height: 36px;
+  padding:12px 10px;
+  font-size:15px;
   text-align: center;
   background:#11294b;
   border-bottom:1px solid #89b75d;

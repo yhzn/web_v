@@ -14,8 +14,8 @@
   }
   .menuCon .menu-list{
     color:#fff;
-    padding:10px 20px;
-    font-size:14px;
+    padding:12px 20px;
+    font-size:15px;
     background:#1d4061;
     border-bottom:1px solid #395b76;
   }
