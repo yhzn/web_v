@@ -47,10 +47,7 @@ import medicalTechnology from '@/view/medicaltechnology/medical_technology.vue'
 import fileFile from '@/view/medicaltechnology/file_file.vue'
 import fileArchive from '@/view/medicaltechnology/file_archive.vue'
 import fileArchiveNew from '@/view/medicaltechnology/file_archive_new.vue'
-<<<<<<< HEAD
-import medApplay from '@/view/medicaltechnology/med_applay.vue'
-import approvalPending from '@/view/medicaltechnology/med_approval_pending.vue'
-=======
+
 import qualificationApplay from '@/view/medicaltechnology/qualification_applay.vue'
 import qualificationExa from '@/view/medicaltechnology/qualification_exa.vue'
 import qualificationInquiry from '@/view/medicaltechnology/qualification_inquiry.vue'
@@ -73,7 +70,9 @@ import medApproval from '@/view/medicaltechnology/med_approval.vue'
 import medSummary from '@/view/medicaltechnology/med_summary.vue'
 import medInspectionMatter from '@/view/medicaltechnology/med_inspection_matter.vue'
 import medInspectionSchool from '@/view/medicaltechnology/med_inspection_school.vue'
->>>>>>> mao
+import medApplay from '@/view/medicaltechnology/med_applay.vue'
+import approvalPending from '@/view/medicaltechnology/med_approval_pending.vue'
+
 
 Vue.use(Router)
 export default new Router({
@@ -84,19 +83,17 @@ export default new Router({
       component: HomePage
     },
     {
-<<<<<<< HEAD
       path: '/medicaltechnology/med_applay',
       name: 'medApplay',
       component: medApplay
     },
-
     {
       path: '/medicaltechnology/med_approval_pending',
       name: 'approvalPending',
       component: approvalPending
     },
 
-=======
+    {
       path: '/medicaltechnology/med_check',
       name: 'medCheck',
       component: medCheck
@@ -206,7 +203,6 @@ export default new Router({
       name: 'qualificationTechnology',
       component: qualificationTechnology
     },
->>>>>>> mao
     {
       path: '/medicaltechnology/file_file',
       name: 'fileFile',
