@@ -47,8 +47,33 @@ import medicalTechnology from '@/view/medicaltechnology/medical_technology.vue'
 import fileFile from '@/view/medicaltechnology/file_file.vue'
 import fileArchive from '@/view/medicaltechnology/file_archive.vue'
 import fileArchiveNew from '@/view/medicaltechnology/file_archive_new.vue'
+<<<<<<< HEAD
 import medApplay from '@/view/medicaltechnology/med_applay.vue'
 import approvalPending from '@/view/medicaltechnology/med_approval_pending.vue'
+=======
+import qualificationApplay from '@/view/medicaltechnology/qualification_applay.vue'
+import qualificationExa from '@/view/medicaltechnology/qualification_exa.vue'
+import qualificationInquiry from '@/view/medicaltechnology/qualification_inquiry.vue'
+import qualificationManagement from '@/view/medicaltechnology/qualification_management.vue'
+import qualificationTechnology from '@/view/medicaltechnology/qualification_technology.vue'
+import bonusDetail from '@/view/medicaltechnology/bonus_detail.vue'
+import bonusGrant from '@/view/medicaltechnology/bonus_grant.vue'
+import bonusSign from '@/view/medicaltechnology/bonus_sign.vue'
+import bonusState from '@/view/medicaltechnology/bonus_state.vue'
+import hospitalDetail from '@/view/medicaltechnology/hospital_detail.vue'
+import hospitalList from '@/view/medicaltechnology/hospital_list.vue'
+import hospitalGather from '@/view/medicaltechnology/hospital_gather.vue'
+import catalogRoutine from '@/view/medicaltechnology/catalog_routine.vue'
+import catalogChange from '@/view/medicaltechnology/catalog_change.vue'
+import catalogSupervise from '@/view/medicaltechnology/catalog_supervise.vue'
+import catalogStop from '@/view/medicaltechnology/catalog_stop.vue'
+import medCheck from '@/view/medicaltechnology/med_check.vue'
+import medCheckApproval from '@/view/medicaltechnology/med_check_approval.vue'
+import medApproval from '@/view/medicaltechnology/med_approval.vue'
+import medSummary from '@/view/medicaltechnology/med_summary.vue'
+import medInspectionMatter from '@/view/medicaltechnology/med_inspection_matter.vue'
+import medInspectionSchool from '@/view/medicaltechnology/med_inspection_school.vue'
+>>>>>>> mao
 
 Vue.use(Router)
 export default new Router({
@@ -59,6 +84,7 @@ export default new Router({
       component: HomePage
     },
     {
+<<<<<<< HEAD
       path: '/medicaltechnology/med_applay',
       name: 'medApplay',
       component: medApplay
@@ -70,6 +96,117 @@ export default new Router({
       component: approvalPending
     },
 
+=======
+      path: '/medicaltechnology/med_check',
+      name: 'medCheck',
+      component: medCheck
+    },
+    {
+      path: '/medicaltechnology/med_check_approval',
+      name: 'medCheckApproval',
+      component: medCheckApproval
+    },
+    {
+      path: '/medicaltechnology/med_approval',
+      name: 'medApproval',
+      component: medApproval
+    },
+    {
+      path: '/medicaltechnology/med_summary',
+      name: 'medSummary',
+      component: medSummary
+    },
+    {
+      path: '/medicaltechnology/med_inspection_matter',
+      name: 'medInspectionMatter',
+      component: medInspectionMatter
+    },
+    {
+      path: '/medicaltechnology/med_inspection_school',
+      name: 'medInspectionSchool',
+      component: medInspectionSchool
+    },
+    {
+      path: '/medicaltechnology/catalog_routine',
+      name: 'catalogRoutine',
+      component: catalogRoutine
+    },
+    {
+      path: '/medicaltechnology/catalog_change',
+      name: 'catalogChange',
+      component: catalogChange
+    },
+    {
+      path: '/medicaltechnology/catalog_supervise',
+      name: 'catalogSupervise',
+      component: catalogSupervise
+    },
+    {
+      path: '/medicaltechnology/catalog_stop',
+      name: 'catalogStop',
+      component: catalogStop
+    },
+    {
+      path: '/medicaltechnology/hospital_detail',
+      name: 'hospitalDetail',
+      component: hospitalDetail
+    },
+    {
+      path: '/medicaltechnology/hospital_list',
+      name: 'hospitalList',
+      component: hospitalList
+    },
+    {
+      path: '/medicaltechnology/hospital_gather',
+      name: 'hospitalGather',
+      component: hospitalGather
+    },
+    {
+      path: '/medicaltechnology/bonus_detail',
+      name: 'bonusDetail',
+      component: bonusDetail
+    },
+    {
+      path: '/medicaltechnology/bonus_grant',
+      name: 'bonusGrant',
+      component: bonusGrant
+    },
+    {
+      path: '/medicaltechnology/bonus_sign',
+      name: 'bonusSign',
+      component: bonusSign
+    },
+    {
+      path: '/medicaltechnology/bonus_state',
+      name: 'bonusState',
+      component: bonusState
+    },
+    {
+      path: '/medicaltechnology/qualification_applay',
+      name: 'qualificationApplay',
+      component: qualificationApplay
+    },
+    {
+      path: '/medicaltechnology/qualification_exa',
+      name: 'qualificationExa',
+      component: qualificationExa
+    },
+    {
+      path: '/medicaltechnology/qualification_inquiry',
+      name: 'qualificationInquiry',
+      component: qualificationInquiry
+    },
+    {
+      path: '/medicaltechnology/qualification_management',
+      name: 'qualificationManagement',
+      component: qualificationManagement
+    },
+    {
+      path: '/medicaltechnology/qualification_technology',
+      name: 'qualificationTechnology',
+      component: qualificationTechnology
+    },
+>>>>>>> mao
     {
       path: '/medicaltechnology/file_file',
       name: 'fileFile',

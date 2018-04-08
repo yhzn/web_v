@@ -199,6 +199,9 @@
   .quality .contact li span:nth-child(2){
     margin-left:75px;
   }
+  .quality .router-link-active{
+    background:red;
+  }
 </style>
 <template>
 <div class="quality cont">
@@ -237,102 +240,10 @@
   <div class="main"  v-show="showPage=='fun'">
     <div class="icon clearFix">
       <div>
-        <dl>
-          <dt><img src="" v-lazy="homePageIcon"></dt>
+        <dl v-for="(iconItem, iconIndex) in iconData" :class="{active:iconActive==iconIndex}" @touchstart="goStart(iconIndex)" @touchend="goEnd(iconItem.href)">
+          <dt><img src="" v-lazy="iconItem.img"></dt>
           <dd>
-            首页
-          </dd>
-        </dl>
-        <dl>
-          <router-link to="/medicaltechnology/medicaltechnology">
-            <dt><img src="" v-lazy="medicalCareIcon"></dt>
-            <dd>
-              医疗技术
-            </dd>
-          </router-link>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="operationIcon"></dt>
-          <dd>
-            手术管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="targetIcon"></dt>
-          <dd>
-            指标管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="eventIcon"></dt>
-          <dd>
-            不良事件
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="assessmentIcon"></dt>
-          <dd>
-            能力评估
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="checkIcon"></dt>
-          <dd>
-            考核管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="dryMedicIcon"></dt>
-          <dd>
-            医干管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="qualityCtrIcon"></dt>
-          <dd>
-            外来质控
-          </dd>
-        </dl>
-        <dl class="hidden">
-          <dt><img src="" v-lazy="moveIcon"></dt>
-          <dd>
-            更多
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="committeeIcon"></dt>
-          <dd>
-            质量委员会
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="outpatientIcon"></dt>
-          <dd>
-            门诊管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="endangerIcon"></dt>
-          <dd>
-            危机值管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="fileIcon"></dt>
-          <dd>
-            文件管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="systemIcon"></dt>
-          <dd>
-            系统管理
-          </dd>
-        </dl>
-        <dl>
-          <dt><img src="" v-lazy="selfIcon"></dt>
-          <dd>
-            自身管理
+            {{iconItem.text}}
           </dd>
         </dl>
       </div>
@@ -662,25 +573,93 @@
     sec:'联系我们',
     thr:'功能清单'
   }
+  let iconData=[
+    {
+      href:'',
+      img:homePageIcon,
+      text:'首页'
+    },
+    {
+      href:'/medicaltechnology/medicaltechnology',
+      img:medicalCareIcon,
+      text:'医疗技术'
+    },
+    {
+      href:'',
+      img:operationIcon,
+      text:'手术管理'
+    },
+    {
+      href:'',
+      img:targetIcon,
+      text:'指标管理'
+    },
+    {
+      href:'',
+      img:eventIcon,
+      text:'不良事件'
+    },
+    {
+      href:'',
+      img:assessmentIcon,
+      text:'能力评估'
+    },
+    {
+      href:'',
+      img:checkIcon,
+      text:'考核管理'
+    },
+    {
+      href:'',
+      img:dryMedicIcon,
+      text:'医干管理'
+    },
+    {
+      href:'',
+      img:qualityCtrIcon,
+      text:'外来质控'
+    },
+//    {
+//      active:false,
+//      href:'',
+//      img:moveIcon,
+//      text:'更多'
+//    },
+    {
+      href:'',
+      img:committeeIcon,
+      text:'质量委员会'
+    },
+    {
+      href:'',
+      img:outpatientIcon,
+      text:'门诊管理'
+    },
+    {
+      href:'',
+      img:endangerIcon,
+      text:'危机值管理'
+    },
+    {
+      href:'',
+      img:fileIcon,
+      text:'文件管理'
+    },
+    {
+      href:'',
+      img:systemIcon,
+      text:'系统管理'
+    },
+    {
+      href:'',
+      img:selfIcon,
+      text:'自身管理'
+    }
+  ]
+
   export default {
     data() {
       return {
-        homePageIcon,
-        medicalCareIcon,
-        operationIcon,
-        targetIcon,
-        eventIcon,
-        assessmentIcon,
-        checkIcon,
-        dryMedicIcon,
-        qualityCtrIcon,
-        committeeIcon,
-        moveIcon,
-        outpatientIcon,
-        endangerIcon,
-        fileIcon,
-        systemIcon,
-        selfIcon,
         event,
         notice,
         toUpdate,
@@ -703,6 +682,8 @@
         colorBorder_6,
         summary,
         headData,
+        iconActive:null,
+        iconData,
         footBtnData,
         showPage:'fun'
       }
@@ -714,6 +695,13 @@
     methods: {
       togglePage(page){
         this.showPage=page
+      },
+      goStart (res) {
+        this.iconActive=res;
+      },
+      goEnd (data) {
+        this.iconActive=null;
+        this.$router.push({path:data});
       }
     },
     mounted() {
