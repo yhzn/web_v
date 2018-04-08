@@ -28,11 +28,11 @@
   },
   {
     "text":"医疗技术申请",
-    "active":true,
+    "active":false,
     "subList":[
       {
         "href":"/medicaltechnology/med_applay",
-        "active":true,
+        "active":false,
         "text":"新增申请（医生）"
       },
       {
