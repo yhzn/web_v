@@ -8,7 +8,6 @@
   }
   .quality .main{
     height:calc( 100vh - 100px );
-    overflow: auto;
   }
   .quality .main .sum img{
     width:100%;
@@ -90,14 +89,14 @@
     text-align: right;
   }
   .quality .thr-list:nth-child(1) .text{
-    margin-right:10px;
+    margin-right:6px;
   }
   .quality .thr-list:nth-child(2) .text{
-    margin-left:5px;
-    margin-right:5px;
+    margin-left:3px;
+    margin-right:3px;
   }
   .quality .thr-list:nth-child(3) .text{
-    margin-left:10px;
+    margin-left:6px;
   }
   .quality .tab-list{
     padding-top:10px;
@@ -135,11 +134,11 @@
     text-align: center;
     transform: translateY(-50%);
   }
-  .quality .sec-list .text:nth-child(1){
+  .quality .sec-list:nth-child(1) .text{
     margin-right:5px;
   }
-  .quality .sec-list .text:nth-child(2){
-    margin-left  :5px;
+  .quality .sec-list:nth-child(2) .text{
+    margin-left:5px;
   }
   .quality .footer .other_btn dt{
     background:url('../../static/image/icon/contact.png');
@@ -180,6 +179,7 @@
     padding:10px 20px;
   }
   .quality .contact-title{
+    margin:0;
     text-align: center;
     font-size: 16px;
     height: 28px;
@@ -198,9 +198,6 @@
   }
   .quality .contact li span:nth-child(2){
     margin-left:75px;
-  }
-  .quality .router-link-active{
-    background:red;
   }
 </style>
 <template>
@@ -238,285 +235,289 @@
     </div>
   </div>
   <div class="main"  v-show="showPage=='fun'">
-    <div class="icon clearFix">
+    <div class="wrapper">
       <div>
-        <dl v-for="(iconItem, iconIndex) in iconData" :class="{active:iconActive==iconIndex}" @touchstart="goStart(iconIndex)" @touchend="goEnd(iconItem.href)">
-          <dt><img src="" v-lazy="iconItem.img"></dt>
-          <dd>
-            {{iconItem.text}}
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <div class="title">
-      <h3>院部事件、信息公告</h3>
-    </div>
-    <div class="list-con">
-      <div class="clearFix">
-        <div class="thr-list text-right">
-          <router-link to="event/event">
-            <div class="text" v-lazy:background-image="event">
-              <div>
-                大事件
-              </div>
-            </div>
-          </router-link>
+        <div class="icon clearFix">
+          <div>
+            <dl v-for="(iconItem, iconIndex) in iconData" :class="{active:iconActive==iconIndex}" @touchstart="goStart(iconIndex)" @touchend="goEnd(iconItem.href)">
+              <dt><img src="" v-lazy="iconItem.img"></dt>
+              <dd>
+                {{iconItem.text}}
+              </dd>
+            </dl>
+          </div>
         </div>
-        <div class="thr-list">
-          <router-link to="/notice/notice">
-            <div class="text" v-lazy:background-image="notice">
-              <div>
-                通知公告
-              </div>
+        <div class="title">
+          <h3>院部事件、信息公告</h3>
+        </div>
+        <div class="list-con">
+          <div class="clearFix">
+            <div class="thr-list text-right">
+              <router-link to="event/event">
+                <div class="text" v-lazy:background-image="event">
+                  <div>
+                    大事件
+                  </div>
+                </div>
+              </router-link>
             </div>
-          </router-link>
+            <div class="thr-list">
+              <router-link to="/notice/notice">
+                <div class="text" v-lazy:background-image="notice">
+                  <div>
+                    通知公告
+                  </div>
+                </div>
+              </router-link>
 
-        </div>
-        <div class="thr-list">
-          <router-link to="/update/update">
-            <div class="text" v-lazy:background-image="toUpdate">
-              <div>
-                信息更新公告
-              </div>
             </div>
-          </router-link>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>指标数据</h3>
-    </div>
-    <div class="list-con">
-      <div class="tab-list clearFix">
-        <div class="thr-list text-right">
-          <div class="tab-text" v-lazy:background-image="colorBorder_1">
-            <router-link to="/target/hospital">
-              <div>
-                住院病人统计
-              </div>
-            </router-link>
+            <div class="thr-list">
+              <router-link to="/update/update">
+                <div class="text" v-lazy:background-image="toUpdate">
+                  <div>
+                    信息更新公告
+                  </div>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
-        <div class="thr-list">
-          <div class="tab-text" v-lazy:background-image="colorBorder_2">
-            <router-link to="/target/treatment">
-              <div>
-                门急诊统计
+        <div class="title">
+          <h3>指标数据</h3>
+        </div>
+        <div class="list-con">
+          <div class="tab-list clearFix">
+            <div class="thr-list text-right">
+              <div class="tab-text" v-lazy:background-image="colorBorder_1">
+                <router-link to="/target/hospital">
+                  <div>
+                    住院病人统计
+                  </div>
+                </router-link>
               </div>
-            </router-link>
+            </div>
+            <div class="thr-list">
+              <div class="tab-text" v-lazy:background-image="colorBorder_2">
+                <router-link to="/target/treatment">
+                  <div>
+                    门急诊统计
+                  </div>
+                </router-link>
+              </div>
+            </div>
+            <div class="thr-list">
+              <div class="tab-text" v-lazy:background-image="colorBorder_3">
+                <router-link to="/target/register">
+                  <div>
+                    挂号统计
+                  </div>
+                </router-link>
+              </div>
+            </div>
+            <div class="thr-list">
+              <div class="tab-text" v-lazy:background-image="colorBorder_4">
+                <router-link to="/target/norm">
+                  <div>
+                    年度指标
+                  </div>
+                </router-link>
+              </div>
+            </div>
+            <div class="thr-list">
+              <div class="tab-text" v-lazy:background-image="colorBorder_5">
+                <router-link to="/target/scheduling">
+                  <div>
+                    科室排班
+                  </div>
+                </router-link>
+              </div>
+            </div>
+            <div class="thr-list">
+              <div class="tab-text" v-lazy:background-image="colorBorder_6">
+                <router-link to="/target/endanger">
+                  <div>
+                    危急值管理
+                  </div>
+                </router-link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="thr-list">
-          <div class="tab-text" v-lazy:background-image="colorBorder_3">
-            <router-link to="/target/register">
-              <div>
-                挂号统计
+        <div class="title">
+          <h3>外来质控</h3>
+        </div>
+        <div class="list-con">
+          <div class="clearFix">
+            <div class="thr-list">
+              <div class="text" v-lazy:background-image="catalog">
+                <router-link to="/qualitycontrol/qualitycontrol">
+                  <div>
+                    <p>外来质控</p>
+                    <p>目录</p>
+                  </div>
+                </router-link>
               </div>
-            </router-link>
+            </div>
+            <div class="thr-list">
+              <div class="text" v-lazy:background-image="feedBack">
+                <router-link to="/feedback/feedback">
+                  <div>
+                    <p>外来质控</p>
+                    <p>反馈</p>
+                  </div>
+                </router-link>
+              </div>
+            </div>
+            <div class="thr-list">
+              <div class="text" v-lazy:background-image="flow">
+                <router-link to="/standard/standard">
+                  <div>
+                    <p>外来质控</p>
+                    <p>管理流程和标准</p>
+                  </div>
+                </router-link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="thr-list">
-          <div class="tab-text" v-lazy:background-image="colorBorder_4">
-            <router-link to="/target/norm">
-              <div>
-                年度指标
-              </div>
-            </router-link>
+        <div class="title">
+          <h3>质量与考核</h3>
+        </div>
+        <div class="list-con">
+          <div class="tab-list clearFix">
+            <div class="thr-list text-right">
+              <router-link to="/evaluation/check">
+                <div class="tab-text" v-lazy:background-image="colorBorder_1">
+                  <div>
+                    <p>内部质控</p>
+                    <p>考核与反馈</p>
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/evaluation/report">
+                <div class="tab-text" v-lazy:background-image="colorBorder_2">
+                  <div>
+                    月质量简报
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/evaluation/record">
+                <div class="tab-text" v-lazy:background-image="colorBorder_3">
+                  <div>
+                    <p>协调会议记录及</p>
+                    <p>签到</p>
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/evaluation/medicalquality">
+                <div class="tab-text" v-lazy:background-image="colorBorder_4">
+                  <div>
+                    季度医疗质量
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/evaluation/inspectionresult">
+                <div class="tab-text" v-lazy:background-image="colorBorder_5">
+                  <div>
+                    <p>月检查结果</p>
+                    <p>反馈</p>
+                  </div>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
-        <div class="thr-list">
-          <div class="tab-text" v-lazy:background-image="colorBorder_5">
-            <router-link to="/target/scheduling">
-              <div>
-                科室排班
-              </div>
-            </router-link>
+        <div class="title">
+          <h3>管理及培训</h3>
+        </div>
+        <div class="list-con">
+          <div class="clearFix">
+            <div class="thr-list">
+              <router-link to="/managementtool/managementtool">
+                <div class="text" v-lazy:background-image="admin">
+                  <div>
+                    管理工具
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/application/application">
+                <div class="text" v-lazy:background-image="application">
+                  <div>
+                    应用实例
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="thr-list">
+              <router-link to="/training/training">
+                <div class="text" v-lazy:background-image="tran">
+                  <div>
+                    培训交流
+                  </div>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
-        <div class="thr-list">
-          <div class="tab-text" v-lazy:background-image="colorBorder_6">
-            <router-link to="/target/endanger">
-              <div>
-                危急值管理
-              </div>
-            </router-link>
+        <div class="title">
+          <h3>快捷入口</h3>
+        </div>
+        <div class="list-con">
+          <div class="clearFix">
+            <div class="sec-list">
+              <router-link to="/qualifications/qualifications">
+                <div class="text" v-lazy:background-image="admin">
+                  <div>
+                    资质项目申请入口
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="sec-list">
+              <router-link to="/liaison/liaison">
+                <div class="text" v-lazy:background-image="application">
+                  <div>
+                    通知联络
+                  </div>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>外来质控</h3>
-    </div>
-    <div class="list-con">
-      <div class="clearFix">
-        <div class="thr-list">
-          <div class="text" v-lazy:background-image="catalog">
-            <router-link to="/qualitycontrol/qualitycontrol">
-              <div>
-                <p>外来质控</p>
-                <p>目录</p>
-              </div>
-            </router-link>
+        <div class="title">
+          <h3>文件展示</h3>
+        </div>
+        <div class="list-con">
+          <div class="clearFix">
+            <div class="sec-list">
+              <router-link to="/security/security">
+                <div class="text" v-lazy:background-image="securityGoals">
+                  <div>
+                    中国医院协会患者安全目标
+                  </div>
+                </div>
+              </router-link>
+            </div>
+            <div class="sec-list">
+              <router-link to="/fileman/fileman">
+                <div class="text" v-lazy:background-image="file_m">
+                  <div>
+                    文件管理
+                  </div>
+                </div>
+              </router-link>
+            </div>
           </div>
-        </div>
-        <div class="thr-list">
-          <div class="text" v-lazy:background-image="feedBack">
-            <router-link to="/feedback/feedback">
-              <div>
-                <p>外来质控</p>
-                <p>反馈</p>
-              </div>
-            </router-link>
-          </div>
-        </div>
-        <div class="thr-list">
-          <div class="text" v-lazy:background-image="flow">
-            <router-link to="/standard/standard">
-              <div>
-                <p>外来质控</p>
-                <p>管理流程和标准</p>
-              </div>
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>质量与考核</h3>
-    </div>
-    <div class="list-con">
-      <div class="tab-list clearFix">
-        <div class="thr-list text-right">
-          <router-link to="/evaluation/check">
-            <div class="tab-text" v-lazy:background-image="colorBorder_1">
-              <div>
-                <p>内部质控</p>
-                <p>考核与反馈</p>
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/evaluation/report">
-            <div class="tab-text" v-lazy:background-image="colorBorder_2">
-              <div>
-                月质量简报
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/evaluation/record">
-            <div class="tab-text" v-lazy:background-image="colorBorder_3">
-              <div>
-                <p>协调会议记录及</p>
-                <p>签到</p>
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/evaluation/medicalquality">
-            <div class="tab-text" v-lazy:background-image="colorBorder_4">
-              <div>
-                季度医疗质量
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/evaluation/inspectionresult">
-            <div class="tab-text" v-lazy:background-image="colorBorder_5">
-              <div>
-                <p>月检查结果</p>
-                <p>反馈</p>
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>管理及培训</h3>
-    </div>
-    <div class="list-con">
-      <div class="clearFix">
-        <div class="thr-list">
-          <router-link to="/managementtool/managementtool">
-            <div class="text" v-lazy:background-image="admin">
-              <div>
-                管理工具
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/application/application">
-            <div class="text" v-lazy:background-image="application">
-              <div>
-                应用实例
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="thr-list">
-          <router-link to="/training/training">
-            <div class="text" v-lazy:background-image="tran">
-              <div>
-                培训交流
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>快捷入口</h3>
-    </div>
-    <div class="list-con">
-      <div class="clearFix">
-        <div class="sec-list">
-          <router-link to="/qualifications/qualifications">
-            <div class="text" v-lazy:background-image="admin">
-              <div>
-                资质项目申请入口
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="sec-list">
-          <router-link to="/liaison/liaison">
-            <div class="text" v-lazy:background-image="application">
-              <div>
-                通知联络
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-    </div>
-    <div class="title">
-      <h3>文件展示</h3>
-    </div>
-    <div class="list-con">
-      <div class="clearFix">
-        <div class="sec-list">
-          <router-link to="/security/security">
-            <div class="text" v-lazy:background-image="securityGoals">
-              <div>
-                中国医院协会患者安全目标
-              </div>
-            </div>
-          </router-link>
-        </div>
-        <div class="sec-list">
-          <router-link to="/fileman/fileman">
-            <div class="text" v-lazy:background-image="file_m">
-              <div>
-                文件管理
-              </div>
-            </div>
-          </router-link>
         </div>
       </div>
     </div>
@@ -567,6 +568,9 @@
   import headCon from '@/components/head.vue'
   import footCon from '@/components/foot.vue'
   import headData from '@/data/head_data.json'
+  import scrollTop from '@/data/qualityScrollTop.json'
+
+  import BScroll from 'better-scroll'
 
   let footBtnData={
     fir:'系统概述',
@@ -656,10 +660,10 @@
       text:'自身管理'
     }
   ]
-
   export default {
     data() {
       return {
+        scrollTop,
         event,
         notice,
         toUpdate,
@@ -692,6 +696,10 @@
       headCon,
       footCon,
     },
+    activated () {
+      let start=this.scrollTop.y;
+      this.initData(start)
+    },
     methods: {
       togglePage(page){
         this.showPage=page
@@ -702,10 +710,21 @@
       goEnd (data) {
         this.iconActive=null;
         this.$router.push({path:data});
+      },
+      async initData(start){
+        this.$nextTick(()=>{
+          new BScroll('.wrapper',{
+            scrollY:true,
+            click:true,
+            startY:start,
+            probeType:3,
+          }).on('scroll',(pos)=>{
+            this.scrollTop.y=parseInt(pos.y)
+          })
+        })
       }
     },
     mounted() {
-
     }
   }
 </script>

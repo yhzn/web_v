@@ -43,35 +43,35 @@ import report from '@/view/evaluation/report'
 import comment from '@/view/evaluation/comment'
 import novReport from '@/view/evaluation/nov_report'
 
-import medicalTechnology from '@/view/medicaltechnology/medical_technology.vue'
-import fileFile from '@/view/medicaltechnology/file_file.vue'
-import fileArchive from '@/view/medicaltechnology/file_archive.vue'
-import fileArchiveNew from '@/view/medicaltechnology/file_archive_new.vue'
+import medicalTechnology from '@/view/medicaltechnology/medical_technology'
+import fileFile from '@/view/medicaltechnology/file_file'
+import fileArchive from '@/view/medicaltechnology/file_archive'
+import fileArchiveNew from '@/view/medicaltechnology/file_archive_new'
 
-import qualificationApplay from '@/view/medicaltechnology/qualification_applay.vue'
-import qualificationExa from '@/view/medicaltechnology/qualification_exa.vue'
-import qualificationInquiry from '@/view/medicaltechnology/qualification_inquiry.vue'
-import qualificationManagement from '@/view/medicaltechnology/qualification_management.vue'
-import qualificationTechnology from '@/view/medicaltechnology/qualification_technology.vue'
-import bonusDetail from '@/view/medicaltechnology/bonus_detail.vue'
-import bonusGrant from '@/view/medicaltechnology/bonus_grant.vue'
-import bonusSign from '@/view/medicaltechnology/bonus_sign.vue'
-import bonusState from '@/view/medicaltechnology/bonus_state.vue'
-import hospitalDetail from '@/view/medicaltechnology/hospital_detail.vue'
-import hospitalList from '@/view/medicaltechnology/hospital_list.vue'
-import hospitalGather from '@/view/medicaltechnology/hospital_gather.vue'
-import catalogRoutine from '@/view/medicaltechnology/catalog_routine.vue'
-import catalogChange from '@/view/medicaltechnology/catalog_change.vue'
-import catalogSupervise from '@/view/medicaltechnology/catalog_supervise.vue'
-import catalogStop from '@/view/medicaltechnology/catalog_stop.vue'
-import medCheck from '@/view/medicaltechnology/med_check.vue'
-import medCheckApproval from '@/view/medicaltechnology/med_check_approval.vue'
-import medApproval from '@/view/medicaltechnology/med_approval.vue'
-import medSummary from '@/view/medicaltechnology/med_summary.vue'
-import medInspectionMatter from '@/view/medicaltechnology/med_inspection_matter.vue'
-import medInspectionSchool from '@/view/medicaltechnology/med_inspection_school.vue'
-import medApplay from '@/view/medicaltechnology/med_applay.vue'
-import approvalPending from '@/view/medicaltechnology/med_approval_pending.vue'
+import qualificationApplay from '@/view/medicaltechnology/qualification_applay'
+import qualificationExa from '@/view/medicaltechnology/qualification_exa'
+import qualificationInquiry from '@/view/medicaltechnology/qualification_inquiry'
+import qualificationManagement from '@/view/medicaltechnology/qualification_management'
+import qualificationTechnology from '@/view/medicaltechnology/qualification_technology'
+import bonusDetail from '@/view/medicaltechnology/bonus_detail'
+import bonusGrant from '@/view/medicaltechnology/bonus_grant'
+import bonusSign from '@/view/medicaltechnology/bonus_sign'
+import bonusState from '@/view/medicaltechnology/bonus_state'
+import hospitalDetail from '@/view/medicaltechnology/hospital_detail'
+import hospitalList from '@/view/medicaltechnology/hospital_list'
+import hospitalGather from '@/view/medicaltechnology/hospital_gather'
+import catalogRoutine from '@/view/medicaltechnology/catalog_routine'
+import catalogChange from '@/view/medicaltechnology/catalog_change'
+import catalogSupervise from '@/view/medicaltechnology/catalog_supervise'
+import catalogStop from '@/view/medicaltechnology/catalog_stop'
+import medCheck from '@/view/medicaltechnology/med_check'
+import medCheckApproval from '@/view/medicaltechnology/med_check_approval'
+import medApproval from '@/view/medicaltechnology/med_approval'
+import medSummary from '@/view/medicaltechnology/med_summary'
+import medInspectionMatter from '@/view/medicaltechnology/med_inspection_matter'
+import medInspectionSchool from '@/view/medicaltechnology/med_inspection_school'
+import medApplay from '@/view/medicaltechnology/med_applay'
+import approvalPending from '@/view/medicaltechnology/med_approval_pending'
 
 
 Vue.use(Router)
@@ -80,7 +80,9 @@ export default new Router({
     {
       path: '/',
       name: 'HomePage',
-      component: HomePage
+      component: HomePage,
+      meta: { keepAlive: true }
+
     },
     {
       path: '/medicaltechnology/med_applay',
@@ -379,14 +381,10 @@ export default new Router({
       component: register
     },
     {
-      path: '/homePage',
-      name: 'HomePage',
-      component: HomePage
-    },
-    {
       path: '/qualityPage',
       name: 'qualityPage',
-      component: qualityPage
+      component: qualityPage,
+      meta: { keepAlive: true }
     },
     {
       path: '/event/event',

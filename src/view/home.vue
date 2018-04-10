@@ -1,8 +1,6 @@
 <style>
   .home .main{
-    /*position:absolute;*/
     height:calc( 100vh - 42px );
-    overflow: auto;
   }
   .home .tips{
     height:36px;
@@ -19,6 +17,7 @@
     background-size: cover;
     margin:0 10px 20px;
     height:120px;
+    font-size:18px;
 
   }
   .home a{
@@ -31,7 +30,6 @@
     color:#fff;
   }
 
-
 </style>
 <template>
   <div class="home cont">
@@ -39,70 +37,74 @@
       请您点击右上角<strong> " ┇ " </strong>按钮添加收藏 ... <strong>↗</strong>
     </div>
     <div class="main">
-      <div class="list" v-lazy:background-image="qualityCtr">
-        <router-link to="/qualityPage">
-          医疗质量信息管理系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="emeTre">
-        <router-link to="/homePage">
-        急诊信息整体解决方案
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="cockpit">
-        <router-link to="/homePage">
-        院长驾驶舱
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="getHealth">
-        <router-link to="/homePage">
-        医院康复科信息系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="disease">
-        <router-link to="/homePage">
-        疾病上报管理系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="information">
-        <router-link to="/homePage">
-        信息科管系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="scheduling">
-        <router-link to="/homePage">
-        科室排班系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="backbone">
-        <router-link to="/homePage">
-        科室与医疗骨干管理系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="hospitalDuty">
-        <router-link to="/homePage">
-        医院总值班系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="reward">
-        <router-link to="/homePage">
-        奖金发放管理系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="meetingAtt">
-        <router-link to="/homePage">
-        医院会议考勤管理系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="medicalRecord">
-        <router-link to="/homePage">
-        病历分送系统
-        </router-link>
-      </div>
-      <div class="list" v-lazy:background-image="IntegratedPlatform">
-        <router-link to="/homePage">
-        医院信息集成平台
-        </router-link>
+      <div class="wrapper">
+        <div>
+          <div class="list" v-lazy:background-image="qualityCtr">
+            <router-link to="/qualityPage">
+              医疗质量信息管理系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="emeTre">
+            <router-link to="/homePage">
+            急诊信息整体解决方案
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="cockpit">
+            <router-link to="/homePage">
+            院长驾驶舱
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="getHealth">
+            <router-link to="/homePage">
+            医院康复科信息系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="disease">
+            <router-link to="/homePage">
+            疾病上报管理系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="information">
+            <router-link to="/homePage">
+            信息科管系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="scheduling">
+            <router-link to="/homePage">
+            科室排班系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="backbone">
+            <router-link to="/homePage">
+            科室与医疗骨干管理系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="hospitalDuty">
+            <router-link to="/homePage">
+            医院总值班系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="reward">
+            <router-link to="/homePage">
+            奖金发放管理系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="meetingAtt">
+            <router-link to="/homePage">
+            医院会议考勤管理系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="medicalRecord">
+            <router-link to="/homePage">
+            病历分送系统
+            </router-link>
+          </div>
+          <div class="list" v-lazy:background-image="IntegratedPlatform">
+            <router-link to="/homePage">
+            医院信息集成平台
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -121,6 +123,8 @@
   import meetingAtt from '../../static/image/home/meeting_att.png'
   import medicalRecord from '../../static/image/home/medical_record.png'
   import IntegratedPlatform from '../../static/image/home/Integrated_platform.png'
+  import BScroll from 'better-scroll'
+
   export default {
     data () {
       return {
@@ -140,10 +144,20 @@
 
       }
     },
-    comments:{},
-    methods:{},
+    activated () {
+      this.initData()
+    },
+    methods:{
+      async initData(){
+        this.$nextTick(()=>{
+          new BScroll('.wrapper',{
+            scrollY:true,
+            click:true,
+          })
+        })
+      }
+    },
     mounted () {
-
     }
   }
 </script>

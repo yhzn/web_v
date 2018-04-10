@@ -26,6 +26,7 @@
 }
 .sec-level-menu .sub-menu{
   margin:0 10px;
+  overflow: hidden;
 }
 .sec-level-menu .sub-menu li{
   padding:12px 10px;
@@ -40,6 +41,13 @@
 .sec-level-menu .sub-menu li.shadow{
  background:rgba(203,207,255,0.3);
 }
+.menu-fade-enter-active, .menu-fade-leave-active {
+  transition: height .3s ease;
+  height:200px;
+}
+.menu-fade-enter, .menu-fade-leave-active {
+  height: 0;
+}
 </style>
 <template>
 <div class="sec-level-menu">
@@ -51,11 +59,13 @@
         <span class="glyphicon glyphicon-menu-down icon" aria-hidden="true" v-show="item.active"></span>
         <span>更多</span>
       </p>
+      <!--<transition name="menu-fade" mode="out-in">-->
       <ul class="sub-menu" v-show="item.active">
         <li :class="{active:subItem.active, shadow:listState==subIndex}" v-for="(subItem, subIndex) in item.subList" @touchstart="listStateFun(subIndex)" @touchend="subMenu(index,subIndex,subItem.href)">
           {{subItem.text}}
         </li>
       </ul>
+      <!--</transition>-->
     </li>
   </ul>
 </div>
