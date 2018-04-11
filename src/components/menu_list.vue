@@ -1,6 +1,10 @@
 <style>
   .menuCon{
      background:#1d4761;
+    background: -webkit-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+    background: -o-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+    background: -moz-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+    background: linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
   }
   .menuCon .main{
     height:calc( 100vh - 100px );
@@ -46,7 +50,6 @@
   import headTitle from '@/components/head_title'
   import headTitleIcon from '../../static/image/icon/head_title.png'
   import bgTheme from '../../static/image/bg_theme.png'
-
   export default {
     data () {
       return {

@@ -9,12 +9,12 @@
 </div>
 </template>
 <script>
-import qrCode from '../../static/image/qrcode.png'
-export default {
-  data () {
-    return {
-      qrCode,
+  import qrCode from '../../static/image/qrcode.png'
+  export default {
+    data () {
+      return {
+        qrCode,
+      }
     }
   }
-}
 </script>

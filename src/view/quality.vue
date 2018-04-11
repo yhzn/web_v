@@ -3,9 +3,6 @@
     background:#f1f1f1;
 
   }
-  .quality .hidden{
-    display: none;
-  }
   .quality .main{
     height:calc( 100vh - 100px );
   }

@@ -26,6 +26,10 @@ img[src=""]{
   height:calc( 100vh - 40px );
   padding: 0 10px;
   background:#1d4761;
+  background: -webkit-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: -o-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: -moz-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
   overflow: auto;
 }
 .chart .main{
@@ -87,7 +91,10 @@ img[src=""]{
   margin-left:42px;
 }
 .bg-theme{
-  background: #1d4761;
+  background: -webkit-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: -o-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: -moz-linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
+  background: linear-gradient(75deg, rgba(13,30,74,1),  rgba(61,131,150,1) 45%,rgba(61,131,150,1) 65%, rgba(13,30,74,1));
 }
 
 .clearFix{

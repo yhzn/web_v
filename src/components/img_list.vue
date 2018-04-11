@@ -31,9 +31,11 @@ export default {
   props:['imgData'],
   methods:{
     async initData(){
-      new BScroll('.wrapper',{
-        scrollY:true,
-        click:true,
+      this.$nextTick(()=>{
+        new BScroll('.wrapper',{
+          scrollY:true,
+          click:true,
+        })
       })
     }
   },
