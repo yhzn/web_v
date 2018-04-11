@@ -82,7 +82,6 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
-
     },
     {
       path: '/medicaltechnology/med_applay',

@@ -4,30 +4,7 @@
   <div class="txt cont">
     <head-con :headData="headData"></head-con>
     <div class="main">
-      <div class="title-con">
-        <div>
-          <img src="" alt="" v-lazy="rotateIcon">
-        </div>
-        <div>
-          快速搜索窗口
-        </div>
-      </div>
-      <div class="img-one">
-        <img src="" alt="" v-lazy="searchInput">
-      </div>
-      <div class="title-con">
-        <div>
-          <img src="" alt="" v-lazy="rotateIcon">
-        </div>
-        <div>
-          功能界面展示
-        </div>
-      </div>      <div class="img-one">
-      <img src="" alt="" v-lazy="searchInputOne">
-    </div>
-      <div class="img-one">
-        <img src="" alt="" v-lazy="searchInputSec">
-      </div>
+      <img-list :imgData="imgData"></img-list>
     </div>
   </div>
 </template>
@@ -38,19 +15,29 @@
   import searchInput from '../../../static/image/medical/bonus_01.png'
   import searchInputOne from '../../../static/image/medical/bonus_11.png'
   import searchInputSec from '../../../static/image/medical/bonus_12.png'
-
+  import imgList from '@/components/img_list.vue'
+  let imgData=[
+    {
+      headImg:rotateIcon,
+      headTitle:"快速搜索窗口",
+      img:[searchInput]
+    },
+    {
+      headImg:rotateIcon,
+      headTitle:"功能界面展示",
+      img:[searchInputOne,searchInputSec]
+    }
+  ]
   export default {
     data () {
       return {
         headData,
-        searchInput,
-        rotateIcon,
-        searchInputOne,
-        searchInputSec,
+        imgData,
       }
     },
     components:{
       headCon,
+      imgList,
     }
   }
 </script>
