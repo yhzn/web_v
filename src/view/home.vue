@@ -28,6 +28,7 @@
     padding-left:20px;
     font-weight: bold;
     color:#fff;
+    text-decoration: none;
   }
 
 </style>
@@ -45,62 +46,62 @@
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="emeTre">
-            <router-link to="/homePage">
+            <router-link to="">
             急诊信息整体解决方案
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="cockpit">
-            <router-link to="/homePage">
+            <router-link to="">
             院长驾驶舱
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="getHealth">
-            <router-link to="/homePage">
+            <router-link to="">
             医院康复科信息系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="disease">
-            <router-link to="/homePage">
+            <router-link to="">
             疾病上报管理系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="information">
-            <router-link to="/homePage">
+            <router-link to="">
             信息科管系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="scheduling">
-            <router-link to="/homePage">
+            <router-link to="">
             科室排班系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="backbone">
-            <router-link to="/homePage">
+            <router-link to="">
             科室与医疗骨干管理系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="hospitalDuty">
-            <router-link to="/homePage">
+            <router-link to="">
             医院总值班系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="reward">
-            <router-link to="/homePage">
+            <router-link to="">
             奖金发放管理系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="meetingAtt">
-            <router-link to="/homePage">
+            <router-link to="">
             医院会议考勤管理系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="medicalRecord">
-            <router-link to="/homePage">
+            <router-link to="">
             病历分送系统
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="IntegratedPlatform">
-            <router-link to="/homePage">
+            <router-link to="">
             医院信息集成平台
             </router-link>
           </div>

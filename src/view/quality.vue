@@ -5,6 +5,7 @@
   }
   .quality .main{
     height:calc( 100vh - 100px );
+    overflow: auto;
   }
   .quality .main .sum img{
     width:100%;
@@ -14,6 +15,7 @@
   }
   .quality a{
     color:#fff;
+    text-decoration: none;
   }
   .quality .icon{
     padding:10px 10px 0;
@@ -174,27 +176,30 @@
   }
   .quality .contact{
     padding:10px 20px;
+    font-size:18px;
   }
   .quality .contact-title{
     margin:0;
     text-align: center;
-    font-size: 16px;
     height: 28px;
+    font-size:18px;
     border-bottom: 1px solid #b6b6b6;
 
   }
   .quality .contact li a{
     color:#2c3e50;
+    display: inline-block;
+    text-decoration: none;
   }
   .quality .contact li span{
     display: block;
   }
   .quality .contact li span:nth-child(1){
     float:left;
-    width:70px;
+    width:100px;
   }
   .quality .contact li span:nth-child(2){
-    margin-left:75px;
+    margin-left:100px;
   }
 </style>
 <template>
@@ -223,8 +228,8 @@
         <li><span>联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span><span>李鹏海（业务顾问）</span></li>
         <li><span>联系电话：</span><span><a href="tel:18917672050">18917672050</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:86-21-61818686">86-21-61818686</a></span></li>
         <li><span>微&nbsp;&nbsp;信&nbsp;&nbsp;号：</span><span>hzmaolv</span></li>
-        <li><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span><span>上海市普陀区西康路1255号普陀科技大厦6/7/11/17层</span></li>
-        <li><span>路&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;线：</span><span>地铁7号线、13号线至长寿路（3号口）下车，步行377米<br/>公交837路至长寿路西康路下车，步行306米</span></li>
+        <li><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span><span>上海市普陀区西康路1255号普陀科技大厦6/7/11/17层</span></li>
+        <li><span>路&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;线：</span><span>地铁7号线、13号线至长寿路（3号口）下车，步行377米<br/>公交837路至长寿路西康路下车，步行306米</span></li>
       </ul>
       <div>
         <img src="" alt="" v-lazy="contact">
