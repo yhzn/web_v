@@ -114,7 +114,6 @@
       },
       subMenu (index,subIndex,href) {
         if(!this.flag){return false}
-
         this.listState=null;
         // 初始化菜单选项
         this.secMenu.every(v => {
