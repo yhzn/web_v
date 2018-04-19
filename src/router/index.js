@@ -73,6 +73,45 @@ import medInspectionSchool from '@/view/medicaltechnology/med_inspection_school'
 import medApplay from '@/view/medicaltechnology/med_applay'
 import approvalPending from '@/view/medicaltechnology/med_approval_pending'
 
+import operationManagement from '@/view/operationmanagement/operation-management'
+import catalogOperation from '@/view/operationmanagement/catalog-operation'
+import catalogJournal from '@/view/operationmanagement/catalog-journal'
+import catalogQua from '@/view/operationmanagement/catalog-qua'
+import applyQua from '@/view/operationmanagement/apply-qua'
+import applyExa from '@/view/operationmanagement/apply-exa'
+import applyApproval from '@/view/operationmanagement/apply-approval'
+import applyScore from '@/view/operationmanagement/apply-score'
+import applyGroup from '@/view/operationmanagement/apply-group'
+import applyQuality from '@/view/operationmanagement/apply-quality'
+import applyPublicity from '@/view/operationmanagement/apply-publicity'
+import applyArchives from '@/view/operationmanagement/apply-archives'
+import applyQuery from '@/view/operationmanagement/apply-query'
+import applySummary from '@/view/operationmanagement/apply-summary'
+import registerFor from '@/view/operationmanagement/register-for'
+import registerSup from '@/view/operationmanagement/register-sup'
+import registerApply from '@/view/operationmanagement/register-apply'
+import registerMajor from '@/view/operationmanagement/register-major'
+import registerVoid from '@/view/operationmanagement/register-void'
+import countCur from '@/view/operationmanagement/count-cur'
+import countHistory from '@/view/operationmanagement/count-history'
+import allFull from '@/view/operationmanagement/all-full'
+import allHospital from '@/view/operationmanagement/all-hospital'
+import allLevel from '@/view/operationmanagement/all-level'
+import allPro from '@/view/operationmanagement/all-pro'
+import allSpecial from '@/view/operationmanagement/all-special'
+import allCla from '@/view/operationmanagement/all-cla'
+import allFinish from '@/view/operationmanagement/all-finish'
+import allCost from '@/view/operationmanagement/all-cost'
+import allDetail from '@/view/operationmanagement/all-detail'
+import allMom from '@/view/operationmanagement/all-mom'
+import partSpecial from '@/view/operationmanagement/part-special'
+import partAcc from '@/view/operationmanagement/part-acc'
+import partLevel from '@/view/operationmanagement/part-level'
+import partTrend from '@/view/operationmanagement/part-trend'
+import partNum from '@/view/operationmanagement/part-num'
+
+
+
 
 Vue.use(Router)
 export default new Router({
@@ -82,6 +121,187 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/operationmanagement/part-special',
+      name: 'partSpecial',
+      component: partSpecial
+    },
+    {
+      path: '/operationmanagement/part-acc',
+      name: 'partAcc',
+      component: partAcc
+    },
+    {
+      path: '/operationmanagement/part-level',
+      name: 'partLevel',
+      component: partLevel
+    },
+    {
+      path: '/operationmanagement/part-trend',
+      name: 'partTrend',
+      component: partTrend
+    },
+    {
+      path: '/operationmanagement/part-num',
+      name: 'partNum',
+      component: partNum
+    },
+    {
+      path: '/operationmanagement/all-cla',
+      name: 'allCla',
+      component: allCla
+    },
+    {
+      path: '/operationmanagement/all-finish',
+      name: 'allFinish',
+      component: allFinish
+    },
+    {
+      path: '/operationmanagement/all-cost',
+      name: 'allCost',
+      component: allCost
+    },
+    {
+      path: '/operationmanagement/all-detail',
+      name: 'allDetail',
+      component: allDetail
+    },
+    {
+      path: '/operationmanagement/all-mom',
+      name: 'allMom',
+      component: allMom
+    },
+    {
+      path: '/operationmanagement/all-full',
+      name: 'allFull',
+      component: allFull
+    },
+    {
+      path: '/operationmanagement/all-hospital',
+      name: 'allHospital',
+      component: allHospital
+    },
+    {
+      path: '/operationmanagement/all-level',
+      name: 'allLevel',
+      component: allLevel
+    },
+    {
+      path: '/operationmanagement/all-pro',
+      name: 'allPro',
+      component: allPro
+    },
+    {
+      path: '/operationmanagement/all-special',
+      name: 'allSpecial',
+      component: allSpecial
+    },
+
+    {
+      path: '/operationmanagement/count-cur',
+      name: 'countCur',
+      component: countCur
+    },
+    {
+      path: '/operationmanagement/count-history',
+      name: 'countHistory',
+      component: countHistory
+    },
+    {
+      path: '/operationmanagement/register-for',
+      name: 'registerFor',
+      component: registerFor
+    },
+    {
+      path: '/operationmanagement/register-sup',
+      name: 'registerSup ',
+      component: registerSup
+    },
+    {
+      path: '/operationmanagement/register-apply',
+      name: 'registerApply',
+      component: registerApply
+    },
+    {
+      path: '/operationmanagement/register-major',
+      name: 'registerMajor',
+      component: registerMajor
+    },
+    {
+      path: '/operationmanagement/register-void',
+      name: 'registerVoid',
+      component: registerVoid
+    },
+    {
+      path: '/operationmanagement/apply-qua',
+      name: 'applyQua',
+      component: applyQua
+    },
+    {
+      path: '/operationmanagement/apply-exa',
+      name: 'applyExa',
+      component: applyExa
+    },
+    {
+      path: '/operationmanagement/apply-approval',
+      name: 'applyApproval',
+      component: applyApproval
+    },
+    {
+      path: '/operationmanagement/apply-score',
+      name: 'applyScore',
+      component: applyScore
+    },
+    {
+      path: '/operationmanagement/apply-group',
+      name: 'applyGroup',
+      component: applyGroup
+    },
+    {
+      path: '/operationmanagement/apply-quality',
+      name: 'applyQuality',
+      component: applyQuality
+    },
+    {
+      path: '/operationmanagement/apply-publicity',
+      name: 'applyPublicity ',
+      component: applyPublicity
+    },
+    {
+      path: '/operationmanagement/apply-archives',
+      name: 'applyArchives',
+      component: applyArchives
+    },
+    {
+      path: '/operationmanagement/apply-query',
+      name: 'applyQuery',
+      component: applyQuery
+    },
+    {
+      path: '/operationmanagement/apply-summary',
+      name: 'applySummary',
+      component: applySummary
+    },
+    {
+      path: '/operationmanagement/catalog-operation',
+      name: 'catalogOperation',
+      component: catalogOperation
+    },
+    {
+      path: '/operationmanagement/catalog-journal',
+      name: 'catalogJournal',
+      component: catalogJournal
+    },
+    {
+      path: '/operationmanagement/catalog-qua',
+      name: 'catalogQua',
+      component: catalogQua
+    },
+    {
+      path: '/operationmanagement/operation-management',
+      name: 'operationManagement',
+      component: operationManagement
     },
     {
       path: '/medicaltechnology/med_applay',

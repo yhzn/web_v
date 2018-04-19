@@ -61,7 +61,7 @@
   import banner from '../../../static/image/medical/banner.png'
   import bannerTitle from '../../../static/image/medical/banner_title.png'
 
-  import secMenu from '@/data/sec-menu.json'
+  import secMenu from '@/data/medical-technology-menu.json'
   import headData from '@/data/head_data.json'
 
   let footBtnData={

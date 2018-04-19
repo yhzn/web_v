@@ -50,7 +50,7 @@
 }
 </style>
 <template>
-<div class="sec-level-menu">
+<div class="sec-level-menu wrapper">
   <ul class="sec-menu">
     <li v-for="(item, index) in secMenu">
       <p class="sec-menu-title" :class="{active:item.active, shadow:titleState==index}" @touchstart="titleStateFun(index)" @touchend="showSubMenu(index)">
@@ -71,44 +71,60 @@
 </div>
 </template>
 <script>
-export default {
-  data () {
-    return {
-      titleState:null,
-      listState:null,
-    }
-  },
-  props:['secMenu'],
-  methods:{
-    showSubMenu (res) {
-      this.titleState=null;
-      this.secMenu.filter(r => {
-        // 过滤出选中的列表
-        return !this.secMenu[res].active
-      }).map(v => v.active=false);
+  import BScroll from 'better-scroll'
+  export default {
+    data () {
+      return {
+        titleState:null,
+        listState:null,
+        scroll:null,
+      }
+    },
+    props:['secMenu'],
+    methods:{
+      async initData () {
+        this.$nextTick(()=>{
+          this.scroll=new BScroll('.wrapper',{
+            scrollY:true,
+            click:true,
+            stopPropagation:true,
+          })
 
-      this.secMenu[res].active=!this.secMenu[res].active
-    },
-    subMenu (index,subIndex,href) {
-      this.listState=null;
-      // 初始化菜单选项
-      this.secMenu.every(v => {
-        return !v.subList.some(s=>{
-          s.active=false;
-          return false
-        },this)
-      },this);
-      // 选中项加标记
-      this.secMenu[index].subList[subIndex].active=true;
-      this.$router.push(href)
-    },
-    titleStateFun (res) {
-      this.titleState=res;
-    },
-    listStateFun (res) {
-      this.listState=res;
-    }
+        })
+      },
 
+      showSubMenu (res) {
+        this.titleState=null;
+        this.secMenu.filter(r => {
+          // 过滤出选中的列表
+          return !this.secMenu[res].active
+        }).map(v => v.active=false);
+        this.secMenu[res].active=!this.secMenu[res].active;
+        this.scroll.refresh();
+      },
+      subMenu (index,subIndex,href) {
+        this.listState=null;
+        // 初始化菜单选项
+        this.secMenu.every(v => {
+          return !v.subList.some(s=>{
+            s.active=false;
+            return false
+          },this)
+        },this);
+        // 选中项加标记
+        this.secMenu[index].subList[subIndex].active=true;
+        this.$router.push(href)
+      },
+      titleStateFun (res) {
+        this.titleState=res;
+      },
+      listStateFun (res) {
+        this.listState=res;
+      }
+
+    },
+    mounted () {
+      this.initData();
+    }
   }
-}
 </script>

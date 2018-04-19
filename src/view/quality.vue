@@ -591,7 +591,7 @@
       text:'医疗技术'
     },
     {
-      href:'',
+      href:'/operationmanagement/operation-management',
       img:operationIcon,
       text:'手术管理'
     },
@@ -727,6 +727,8 @@
       }
     },
     mounted() {
+      console.log(this.$router.options)
+
     }
   }
 </script>
