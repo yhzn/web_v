@@ -3,13 +3,13 @@
     color:#666;
   }
   .head div{
-    float:left;
     color:#666;
     font-size: 14px;
     padding:10px;
   }
   .head .back{
     position: relative;
+    float:left;
     padding-left: 30px;
   }
   .head div a{
@@ -22,7 +22,9 @@
     font-size: 26px;
   }
   .head div:nth-child(2){
-    padding-left:50px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
   }
 </style>
 <template>

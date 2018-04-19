@@ -196,10 +196,10 @@
   }
   .quality .contact li span:nth-child(1){
     float:left;
-    width:100px;
+    width:90px;
   }
   .quality .contact li span:nth-child(2){
-    margin-left:100px;
+    margin-left:95px;
   }
 </style>
 <template>
@@ -225,7 +225,7 @@
     <h3 class="contact-title">延华智能医疗</h3>
     <div class="contact">
       <ul>
-        <li><span>联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span><span>李鹏海（业务顾问）</span></li>
+        <li><span>联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span><span>李朋海（业务顾问）</span></li>
         <li><span>联系电话：</span><span><a href="tel:18917672050">18917672050</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:86-21-61818686">86-21-61818686</a></span></li>
         <li><span>微&nbsp;&nbsp;信&nbsp;&nbsp;号：</span><span>hzmaolv</span></li>
         <li><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span><span>上海市普陀区西康路1255号普陀科技大厦6/7/11/17层</span></li>

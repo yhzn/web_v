@@ -10,7 +10,7 @@
 </template>
 <script>
   import headCon from '@/components/head.vue'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/operation-head-title.json'
 
   export default {
     data () {

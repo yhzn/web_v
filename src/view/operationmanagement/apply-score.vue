@@ -11,7 +11,7 @@
 <script>
   import headCon from '@/components/head.vue'
   import imgList from '@/components/img_list.vue'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/operation-head-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
   import searchInput from '../../../static/image/operation/apply41.png'
   import searchInputOne from '../../../static/image/operation/apply42.png'

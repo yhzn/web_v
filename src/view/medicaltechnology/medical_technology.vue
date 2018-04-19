@@ -62,7 +62,7 @@
   import bannerTitle from '../../../static/image/medical/banner_title.png'
 
   import secMenu from '@/data/medical-technology-menu.json'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/medical-head-title.json'
 
   let footBtnData={
     fir:'功能描述',

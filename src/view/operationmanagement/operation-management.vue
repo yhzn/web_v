@@ -60,7 +60,7 @@
   import bannerTitle from '../../../static/image/medical/banner_title.png'
 
   import secMenu from '@/data/operation-management-menu.json'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/operation-head-title.json'
 
   let footBtnData={
     fir:'功能描述',

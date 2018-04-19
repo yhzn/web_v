@@ -78,6 +78,7 @@
         titleState:null,
         listState:null,
         scroll:null,
+        flag:true,
       }
     },
     props:['secMenu'],
@@ -86,14 +87,23 @@
         this.$nextTick(()=>{
           this.scroll=new BScroll('.wrapper',{
             scrollY:true,
-            click:true,
+            click:false,
             stopPropagation:true,
           })
+          this.scroll.on('scrollStart',()=>{
+            this.flag=false;
+          })
+          this.scroll.on('scrollEnd',()=>{
+            this.$nextTick(()=>{
+              this.flag=true;
 
+            })
+          })
         })
       },
 
       showSubMenu (res) {
+        if(!this.flag){return false}
         this.titleState=null;
         this.secMenu.filter(r => {
           // 过滤出选中的列表
@@ -103,6 +113,8 @@
         this.scroll.refresh();
       },
       subMenu (index,subIndex,href) {
+        if(!this.flag){return false}
+
         this.listState=null;
         // 初始化菜单选项
         this.secMenu.every(v => {

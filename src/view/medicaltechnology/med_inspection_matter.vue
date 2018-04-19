@@ -11,7 +11,7 @@
 <script>
   import headCon from '@/components/head.vue'
   import imgList from '@/components/img_list.vue'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/medical-head-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
   import searchInput from '../../../static/image/medical/med_07.png'
   import searchInputOne from '../../../static/image/medical/med_71.png'

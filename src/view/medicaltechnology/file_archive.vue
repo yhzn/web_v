@@ -14,7 +14,7 @@
   import searchInput from '../../../static/image/medical/search_input_01.png'
   import searchInputOne from '../../../static/image/medical/search_input_21.png'
   import searchInputSec from '../../../static/image/medical/search_input_22.png'
-  import headData from '@/data/head_data.json'
+  import headData from '@/data/medical-head-title.json'
   import imgList from '@/components/img_list.vue'
   let imgData=[
     {
