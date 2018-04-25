@@ -53,7 +53,7 @@
 <div class="sec-level-menu wrapper">
   <ul class="sec-menu">
     <li v-for="(item, index) in secMenu">
-      <p class="sec-menu-title" :class="{active:item.active, shadow:titleState==index}" @touchstart="titleStateFun(index,item.href)" @touchend="showSubMenu(index,item.href)">
+      <p class="sec-menu-title" :class="{active:item.active, shadow:titleState==index}" @touchstart="titleStateFun(index)" @touchend="showSubMenu(index,item.href)">
         {{item.text}}
         <span class="glyphicon glyphicon-menu-right icon" aria-hidden="true"  v-show="!item.active && item.href==undefined"></span>
         <span class="glyphicon glyphicon-menu-down icon" aria-hidden="true" v-show="item.active && item.href==undefined"></span>
@@ -101,16 +101,23 @@
           })
         })
       },
-
-      showSubMenu (res) {
+      showSubMenu (res,href) {
         if(!this.flag){return false}
         this.titleState=null;
-        this.secMenu.filter(r => {
-          // 过滤出选中的列表
-          return !this.secMenu[res].active
-        }).map(v => v.active=false);
+        if(!href){
+          this.secMenu.filter(r => {
+            // 过滤出选中的列表
+            return !this.secMenu[res].active
+          }).map(v => v.active=false);
+        }else{
+          this.secMenu.map(v => v.active=false);
+        }
+
         this.secMenu[res].active=!this.secMenu[res].active;
         this.scroll.refresh();
+        if(!!href){
+          this.$router.push(href)
+        }
       },
       subMenu (index,subIndex,href) {
         if(!this.flag){return false}
@@ -126,11 +133,9 @@
         this.secMenu[index].subList[subIndex].active=true;
         this.$router.push(href)
       },
-      titleStateFun (res,href) {
+      titleStateFun (res) {
         this.titleState=res;
-        if(!!href){
-          this.$router.push(href)
-        }
+
       },
       listStateFun (res) {
         this.listState=res;

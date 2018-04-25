@@ -54,6 +54,7 @@
   import flowPTitle from '../../../static/image/medical/flow_title.png'
   import banner from '../../../static/image/adverse-event/banner.png'
   import bannerTitle from '../../../static/image/medical/banner_title.png'
+
   import secMenu from '@/data/adverse-event-menu'
   import headData from '@/data/adverse-event-title'
   let footBtnData={
