@@ -109,9 +109,10 @@ import partAcc from '@/view/operationmanagement/part-acc'
 import partLevel from '@/view/operationmanagement/part-level'
 import partTrend from '@/view/operationmanagement/part-trend'
 import partNum from '@/view/operationmanagement/part-num'
+import adverseEvent from '@/view/adverse-event/adverse-event'
 
 
-
+import indexManagement from '@/view/index-management/index-management'
 
 Vue.use(Router)
 export default new Router({
@@ -121,6 +122,16 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/adverse-event/adverse-event',
+      name: 'adverseEvent',
+      component: adverseEvent
+    },
+    {
+      path: '/index-management/index-management',
+      name: 'indexManagement',
+      component: indexManagement
     },
     {
       path: '/operationmanagement/part-special',

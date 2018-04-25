@@ -1,0 +1,37 @@
+[
+  {
+    "href":"",
+    "active":false,
+    "text":"指标管理"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"季报指标"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"统计分析"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"科室指标"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"全院年工作目标"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"抗菌药统计"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"报表查询统计"
+  }
+]

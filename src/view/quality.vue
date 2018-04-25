@@ -596,12 +596,12 @@
       text:'手术管理'
     },
     {
-      href:'',
+      href:'/index-management/index-management',
       img:targetIcon,
       text:'指标管理'
     },
     {
-      href:'',
+      href:'/adverse-event/adverse-event',
       img:eventIcon,
       text:'不良事件'
     },
