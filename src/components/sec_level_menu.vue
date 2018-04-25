@@ -53,14 +53,14 @@
 <div class="sec-level-menu wrapper">
   <ul class="sec-menu">
     <li v-for="(item, index) in secMenu">
-      <p class="sec-menu-title" :class="{active:item.active, shadow:titleState==index}" @touchstart="titleStateFun(index)" @touchend="showSubMenu(index)">
+      <p class="sec-menu-title" :class="{active:item.active, shadow:titleState==index}" @touchstart="titleStateFun(index,item.href)" @touchend="showSubMenu(index,item.href)">
         {{item.text}}
-        <span class="glyphicon glyphicon-menu-right icon" aria-hidden="true"  v-show="!item.active"></span>
-        <span class="glyphicon glyphicon-menu-down icon" aria-hidden="true" v-show="item.active"></span>
-        <span>更多</span>
+        <span class="glyphicon glyphicon-menu-right icon" aria-hidden="true"  v-show="!item.active && item.href==undefined"></span>
+        <span class="glyphicon glyphicon-menu-down icon" aria-hidden="true" v-show="item.active && item.href==undefined"></span>
+        <span v-show="item.href==undefined">更多</span>
       </p>
       <!--<transition name="menu-fade" mode="out-in">-->
-      <ul class="sub-menu" v-show="item.active">
+      <ul class="sub-menu" v-show="item.active && item.href==undefined">
         <li :class="{active:subItem.active, shadow:listState==subIndex}" v-for="(subItem, subIndex) in item.subList" @touchstart="listStateFun(subIndex)" @touchend="subMenu(index,subIndex,subItem.href)">
           {{subItem.text}}
         </li>
@@ -126,8 +126,11 @@
         this.secMenu[index].subList[subIndex].active=true;
         this.$router.push(href)
       },
-      titleStateFun (res) {
+      titleStateFun (res,href) {
         this.titleState=res;
+        if(!!href){
+          this.$router.push(href)
+        }
       },
       listStateFun (res) {
         this.listState=res;

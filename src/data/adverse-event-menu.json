@@ -1,0 +1,33 @@
+[
+  {
+    "href":"",
+    "active":false,
+    "text":"上报不良事件"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"医疗不良事件待审批列表"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"医疗不良事件报告科主任查询"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"整改反馈"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"医疗不良事件汇总表"
+  },
+  {
+    "href":"",
+    "active":false,
+    "text":"医疗不良事件统计图"
+  }
+
+]
