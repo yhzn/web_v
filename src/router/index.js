@@ -110,6 +110,12 @@ import partLevel from '@/view/operationmanagement/part-level'
 import partTrend from '@/view/operationmanagement/part-trend'
 import partNum from '@/view/operationmanagement/part-num'
 import adverseEvent from '@/view/adverse-event/adverse-event'
+import reportEvent from '@/view/adverse-event/report-event'
+import pendingApproval from '@/view/adverse-event/pending-approval'
+import chiefEnquiry from '@/view/adverse-event/chief-enquiry'
+import correctiveFeedback from '@/view/adverse-event/corrective-feedback'
+import summaryTable from '@/view/adverse-event/summary-table'
+import statisticalChart from '@/view/adverse-event/statistical-chart'
 
 
 import indexManagement from '@/view/index-management/index-management'
@@ -164,6 +170,36 @@ export default new Router({
       path: '/index-management/management',
       name: 'indexSbManagement',
       component: indexSbManagement
+    },
+    {
+      path: '/adverse-event/statistical-chart',
+      name: 'statisticalChart',
+      component: statisticalChart
+    },
+    {
+      path: '/adverse-event/summary-table',
+      name: 'summaryTable',
+      component: summaryTable
+    },
+    {
+      path: '/adverse-event/corrective-feedback',
+      name: 'correctiveFeedback',
+      component: correctiveFeedback
+    },
+    {
+      path: '/adverse-event/report-event',
+      name: 'reportEvent',
+      component: reportEvent
+    },
+    {
+      path: '/adverse-event/chief-enquiry',
+      name: 'chiefEnquiry',
+      component: chiefEnquiry
+    },
+    {
+      path: '/adverse-event/pending-approval',
+      name: 'pendingApproval',
+      component: pendingApproval
     },
     {
       path: '/adverse-event/adverse-event',
