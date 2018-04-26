@@ -1,31 +1,31 @@
 [
   {
-    "href":"",
+    "href":"/adverse-event/report-event",
     "active":false,
     "text":"上报不良事件"
   },
   {
-    "href":"",
+    "href":"/adverse-event/pending-approval",
     "active":false,
     "text":"医疗不良事件待审批列表"
   },
   {
-    "href":"",
+    "href":"/adverse-event/chief-enquiry",
     "active":false,
     "text":"医疗不良事件报告科主任查询"
   },
   {
-    "href":"",
+    "href":"/adverse-event/corrective-feedback",
     "active":false,
     "text":"整改反馈"
   },
   {
-    "href":"",
+    "href":"/adverse-event/summary-table",
     "active":false,
     "text":"医疗不良事件汇总表"
   },
   {
-    "href":"",
+    "href":"/adverse-event/statistical-chart",
     "active":false,
     "text":"医疗不良事件统计图"
   }
