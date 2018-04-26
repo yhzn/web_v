@@ -113,6 +113,13 @@ import adverseEvent from '@/view/adverse-event/adverse-event'
 
 
 import indexManagement from '@/view/index-management/index-management'
+import indexSbManagement from '@/view/index-management/management'
+import indexReport from '@/view/index-management/report'
+import indexAnalysis from '@/view/index-management/analysis'
+import indexDepartment from '@/view/index-management/department'
+import indexTarget from '@/view/index-management/target'
+import indexCount from '@/view/index-management/count'
+import indexSearch from '@/view/index-management/search'
 
 Vue.use(Router)
 export default new Router({
@@ -122,6 +129,41 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/index-management/search',
+      name: 'indexSearch',
+      component: indexSearch
+    },
+    {
+      path: '/index-management/count',
+      name: 'indexCount',
+      component: indexCount
+    },
+    {
+      path: '/index-management/target',
+      name: 'indexTarget',
+      component: indexTarget
+    },
+    {
+      path: '/index-management/department',
+      name: 'indexDepartment',
+      component: indexDepartment
+    },
+    {
+      path: '/index-management/analysis',
+      name: 'indexAnalysis',
+      component: indexAnalysis
+    },
+    {
+      path: '/index-management/report',
+      name: 'indexReport',
+      component: indexReport
+    },
+    {
+      path: '/index-management/management',
+      name: 'indexSbManagement',
+      component: indexSbManagement
     },
     {
       path: '/adverse-event/adverse-event',

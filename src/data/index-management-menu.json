@@ -1,36 +1,36 @@
 [
   {
-    "href":"",
+    "href":"/index-management/management",
     "active":false,
     "text":"指标管理"
   },
   {
-    "href":"",
+    "href":"/index-management/report",
     "active":false,
     "text":"季报指标"
   },
   {
-    "href":"",
+    "href":"/index-management/analysis",
     "active":false,
     "text":"统计分析"
   },
   {
-    "href":"",
+    "href":"/index-management/department",
     "active":false,
     "text":"科室指标"
   },
   {
-    "href":"",
+    "href":"/index-management/target",
     "active":false,
     "text":"全院年工作目标"
   },
   {
-    "href":"",
+    "href":"/index-management/count",
     "active":false,
     "text":"抗菌药统计"
   },
   {
-    "href":"",
+    "href":"/index-management/search",
     "active":false,
     "text":"报表查询统计"
   }
