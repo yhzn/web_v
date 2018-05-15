@@ -606,7 +606,7 @@
       text:'不良事件'
     },
     {
-      href:'',
+      href:'/capacity-assessment/capacity-assessment',
       img:assessmentIcon,
       text:'能力评估'
     },

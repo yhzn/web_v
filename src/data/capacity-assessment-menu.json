@@ -1,0 +1,23 @@
+[
+  {
+    "href":"/capacity-assessment/personnel-chart",
+    "active":false,
+    "text":"人员组织图"
+  },
+  {
+    "href":"/capacity-assessment/work-flow",
+    "active":false,
+    "text":"人员办事流程"
+  },
+  {
+    "href":"/capacity-assessment/user-rights",
+    "active":false,
+    "text":"医师用户权限"
+  },
+  {
+    "href":"/capacity-assessment/capacity-evaluation",
+    "active":false,
+    "text":"医师个人医疗能力评价"
+  }
+
+]
