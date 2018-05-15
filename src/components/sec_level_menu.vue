@@ -144,6 +144,8 @@
     },
     mounted () {
       this.initData();
+
     }
+
   }
 </script>
