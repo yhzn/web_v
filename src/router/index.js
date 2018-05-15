@@ -116,6 +116,11 @@ import chiefEnquiry from '@/view/adverse-event/chief-enquiry'
 import correctiveFeedback from '@/view/adverse-event/corrective-feedback'
 import summaryTable from '@/view/adverse-event/summary-table'
 import statisticalChart from '@/view/adverse-event/statistical-chart'
+import personnelChart from '@/view/capacity-assessment/personnel-chart'
+import workFlow from '@/view/capacity-assessment/work-flow'
+import userRights1 from '@/view/capacity-assessment/user-rights'
+import capacityAssessment from '@/view/capacity-assessment/capacity-assessment'
+import capacityEvaluation from '@/view/capacity-assessment/capacity-evaluation'
 
 
 import indexManagement from '@/view/index-management/index-management'
@@ -135,6 +140,31 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/capacity-assessment/capacity-assessment',
+      name: 'capacityAssessment',
+      component: capacityAssessment
+    },
+    {
+      path: '/capacity-assessment/work-flow',
+      name: 'workFlow',
+      component: workFlow
+    },
+    {
+      path: '/capacity-assessment/user-rights',
+      name: 'userRights1',
+      component: userRights1
+    },
+    {
+      path: '/capacity-assessment/personnel-chart',
+      name: 'personnelChart',
+      component: personnelChart
+    },
+    {
+      path: '/capacity-assessment/capacity-evaluation',
+      name: 'capacityEvaluation',
+      component: capacityEvaluation
     },
     {
       path: '/index-management/search',
