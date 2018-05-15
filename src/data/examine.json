@@ -1,0 +1,23 @@
+[
+  {
+    "href":"/examine/comprehensive",
+    "active":false,
+    "text":"综合考核管理"
+  },
+  {
+    "href":"/examine/ability",
+    "active":false,
+    "text":"医疗能力考核"
+  },
+  {
+    "href":"/examine/quality",
+    "active":false,
+    "text":"医疗质量考核"
+  },
+  {
+    "href":"/examine/dispute",
+    "active":false,
+    "text":"医疗纠纷考核"
+  }
+
+]

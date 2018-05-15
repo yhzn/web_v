@@ -611,12 +611,12 @@
       text:'能力评估'
     },
     {
-      href:'',
+      href:'/examine/examine',
       img:checkIcon,
       text:'考核管理'
     },
     {
-      href:'',
+      href:'/treatment/treatment',
       img:dryMedicIcon,
       text:'医干管理'
     },

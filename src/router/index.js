@@ -127,6 +127,15 @@ import indexTarget from '@/view/index-management/target'
 import indexCount from '@/view/index-management/count'
 import indexSearch from '@/view/index-management/search'
 
+import examinePage from '@/view/examine/examine'
+import eaxAbility from '@/view/examine/ability'
+import eaxComprehensive from '@/view/examine/comprehensive'
+import eaxDispute from '@/view/examine/dispute'
+import eaxQuality from '@/view/examine/quality'
+
+import treatmentPage from '@/view/treatment/treatment'
+import treatmentManage from '@/view/treatment/manage'
+ import verifyPage from '@/view/treatment/verify'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -135,6 +144,46 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/treatment/manage',
+      name: 'treatmentManage',
+      component: treatmentManage
+    },
+    {
+      path: '/treatment/verify',
+      name: 'verifyPage',
+      component: verifyPage
+    },
+    {
+      path: '/treatment/treatment',
+      name: 'treatmentPage',
+      component: treatmentPage
+    },
+    {
+      path: '/examine/comprehensive',
+      name: 'eaxComprehensive',
+      component: eaxComprehensive
+    },
+    {
+      path: '/examine/ability',
+      name: 'eaxAbility',
+      component: eaxAbility
+    },
+    {
+      path: '/examine/quality',
+      name: 'eaxQuality',
+      component: eaxQuality
+    },
+    {
+      path: '/examine/dispute',
+      name: 'eaxDispute',
+      component: eaxDispute
+    },
+    {
+      path: '/examine/examine',
+      name: 'examinePage',
+      component: examinePage
     },
     {
       path: '/index-management/search',

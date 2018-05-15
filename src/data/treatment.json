@@ -1,0 +1,13 @@
+[
+  {
+    "href":"/treatment/manage",
+    "active":false,
+    "text":"台账管理"
+  },
+  {
+    "href":"/treatment/verify",
+    "active":false,
+    "text":"台账审核"
+  }
+
+]
