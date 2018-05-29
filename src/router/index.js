@@ -139,7 +139,15 @@ import eaxQuality from '@/view/examine/quality'
 
 import treatmentPage from '@/view/treatment/treatment'
 import treatmentManage from '@/view/treatment/manage'
- import verifyPage from '@/view/treatment/verify'
+import verifyPage from '@/view/treatment/verify'
+
+import solutionPage from '@/view/solution'
+import carePage from '@/view/care/care'
+import clinicalPage from '@/view/clinical/clinical'
+import diagnosisPage from '@/view/diagnosis/diagnosis'
+import recordPage from '@/view/record/record'
+
+
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -148,6 +156,31 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/care/care',
+      name: 'carePage',
+      component: carePage
+    },
+    {
+      path: '/clinical/clinical',
+      name: 'clinicalPage',
+      component: clinicalPage
+    },
+    {
+      path: '/diagnosis/diagnosis',
+      name: 'diagnosisPage',
+      component: diagnosisPage
+    },
+    {
+      path: '/record/record',
+      name: 'recordPage',
+      component: recordPage
+    },
+    {
+      path: '/solution',
+      name: 'solutionPage',
+      component: solutionPage
     },
     {
       path: '/treatment/manage',

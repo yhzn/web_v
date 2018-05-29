@@ -46,7 +46,7 @@
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="emeTre">
-            <router-link to="">
+            <router-link to="/solution">
             急诊信息整体解决方案
             </router-link>
           </div>
