@@ -122,7 +122,6 @@ import userRights1 from '@/view/capacity-assessment/user-rights'
 import capacityAssessment from '@/view/capacity-assessment/capacity-assessment'
 import capacityEvaluation from '@/view/capacity-assessment/capacity-evaluation'
 
-
 import indexManagement from '@/view/index-management/index-management'
 import indexSbManagement from '@/view/index-management/management'
 import indexReport from '@/view/index-management/report'
