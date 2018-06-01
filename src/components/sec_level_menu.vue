@@ -112,7 +112,6 @@
         }else{
           this.secMenu.map(v => v.active=false);
         }
-
         this.secMenu[res].active=!this.secMenu[res].active;
         this.scroll.refresh();
         if(!!href){

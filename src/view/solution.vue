@@ -238,7 +238,6 @@
         this.$router.push({path:data});
       },
       async initData(start){
-        console.log('start')
         this.$nextTick(()=>{
           new BScroll('.wrap',{
             scrollY:true,
