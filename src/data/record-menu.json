@@ -1,0 +1,17 @@
+[
+  {
+    "href":"/record/medical-information",
+    "active":false,
+    "text":"就诊信息"
+  },
+  {
+    "href":"/record/shift-change",
+    "active":false,
+    "text":"交接班"
+  },
+  {
+    "href":"/record/medical-record",
+    "active":false,
+    "text":"各类病历模板"
+  }
+]

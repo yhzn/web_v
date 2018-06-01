@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/diagnosis/automatic-grading",
+    "active":false,
+    "text":"自动分级设置"
+  },
+  {
+    "href":"/diagnosis/objective-indicators",
+    "active":false,
+    "text":"客观指标设置"
+  },
+  {
+    "href":"/diagnosis/automatic-calculation",
+    "active":false,
+    "text":"自动计算设置"
+  },
+  {
+    "href":"/diagnosis/record-query",
+    "active":false,
+    "text":"记录查询"
+  },
+  {
+    "href":"/diagnosis/modify-logquery",
+    "active":false,
+    "text":"分级修改日志查询"
+  }
+]

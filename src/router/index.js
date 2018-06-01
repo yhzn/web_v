@@ -146,6 +146,25 @@ import carePage from '@/view/care/care'
 import clinicalPage from '@/view/clinical/clinical'
 import diagnosisPage from '@/view/diagnosis/diagnosis'
 import recordPage from '@/view/record/record'
+import automaticGrading from '@/view/diagnosis/automatic-grading'
+import objectiveIndicators from '@/view/diagnosis/objective-indicators'
+import automaticCalculation from '@/view/diagnosis/automatic-calculation'
+import recordQuery from '@/view/diagnosis/record-query'
+import modifyLogquery from '@/view/diagnosis/modify-logquery'
+import medicalInformation from '@/view/record/medical-information'
+import shiftChange from '@/view/record/shift-change'
+import medicalRecord from '@/view/record/medical-record'
+import rescueTeam from '@/view/clinical/rescue-team'
+import immediateExecution from '@/view/clinical/immediate-execution'
+import threeStep from '@/view/clinical/three-step'
+import tenStep from '@/view/clinical/ten-step'
+import emergencyClinic from '@/view/clinical/emergency-clinic'
+import nurseManagement from '@/view/care/nurse-management'
+import doctorPage from '@/view/care/doctor'
+import nursingForm from '@/view/care/nursing-form'
+import bedSetting from '@/view/care/bed-setting'
+import historicalInquiry from '@/view/care/historical-inquiry'
+
 
 
 Vue.use(Router)
@@ -156,6 +175,96 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/care/historical-inquiry',
+      name: 'historicalInquiry',
+      component: historicalInquiry
+    },
+    {
+      path: '/care/bed-setting',
+      name: 'bedSetting',
+      component: bedSetting
+    },
+    {
+      path: '/care/nursing-form',
+      name: 'nursingForm',
+      component: nursingForm
+    },
+    {
+      path: '/care/doctor',
+      name: 'doctorPage',
+      component: doctorPage
+    },
+    {
+      path: '/care/nurse-management',
+      name: 'nurseManagement',
+      component: nurseManagement
+    },
+    {
+      path: '/clinical/emergency-clinic',
+      name: 'emergencyClinic',
+      component: emergencyClinic
+    },
+    {
+      path: '/clinical/ten-step',
+      name: 'tenStep',
+      component: tenStep
+    },
+    {
+      path: '/clinical/three-step',
+      name: 'threeStep',
+      component: threeStep
+    },
+    {
+      path: '/clinical/immediate-execution',
+      name: 'immediateExecution',
+      component: immediateExecution
+    },
+    {
+      path: '/clinical/rescue-team',
+      name: 'rescueTeam',
+      component: rescueTeam
+    },
+    {
+      path: '/record/medical-record',
+      name: 'medicalRecord',
+      component: medicalRecord
+    },
+    {
+      path: '/record/shift-change',
+      name: 'shiftChange',
+      component: shiftChange
+    },
+    {
+      path: '/record/medical-information',
+      name: 'medicalInformation',
+      component: medicalInformation
+    },
+    {
+      path: '/diagnosis/modify-logquery',
+      name: 'modifyLogquery',
+      component: modifyLogquery
+    },
+    {
+      path: '/diagnosis/record-query',
+      name: 'recordQuery',
+      component: recordQuery
+    },
+    {
+      path: '/diagnosis/automatic-calculation',
+      name: 'automaticCalculation',
+      component: automaticCalculation
+    },
+    {
+      path: '/diagnosis/objective-indicators',
+      name: 'objectiveIndicators',
+      component: objectiveIndicators
+    },
+    {
+      path: '/diagnosis/automatic-grading',
+      name: 'automaticGrading',
+      component: automaticGrading
     },
     {
       path: '/care/care',

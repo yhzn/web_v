@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/care/nurse-management",
+    "active":false,
+    "text":"护士可操作管理"
+  },
+  {
+    "href":"/care/doctor",
+    "active":false,
+    "text":"医嘱汇总"
+  },
+  {
+    "href":"/care/nursing-form",
+    "active":false,
+    "text":"护理表单汇总"
+  },
+  {
+    "href":"/care/bed-setting",
+    "active":false,
+    "text":"床位设置"
+  },
+  {
+    "href":"/care/historical-inquiry",
+    "active":false,
+    "text":"历史查询"
+  }
+]

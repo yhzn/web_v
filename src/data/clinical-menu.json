@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/clinical/rescue-team",
+    "active":false,
+    "text":"成立抢救小组"
+  },
+  {
+    "href":"/clinical/immediate-execution",
+    "active":false,
+    "text":"立即执行步骤"
+  },
+  {
+    "href":"/clinical/three-step",
+    "active":false,
+    "text":"三分钟内实施步骤"
+  },
+  {
+    "href":"/clinical/ten-step",
+    "active":false,
+    "text":"十分钟内实施步骤"
+  },
+  {
+    "href":"/clinical/emergency-clinic",
+    "active":false,
+    "text":"各类急诊临床路径"
+  }
+]
