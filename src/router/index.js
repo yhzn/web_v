@@ -165,7 +165,10 @@ import nursingForm from '@/view/care/nursing-form'
 import bedSetting from '@/view/care/bed-setting'
 import historicalInquiry from '@/view/care/historical-inquiry'
 
-
+import cockpitPage from '@/view/cockpit/cockpit'
+import operationalPerformance from '@/view/cockpit/analysis'
+import IntegratedOperation from '@/view/cockpit/integrated-operation'
+import Income from '@/view/cockpit/income-work'
 
 Vue.use(Router)
 export default new Router({
@@ -175,6 +178,30 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+
+    {
+      path: '/cockpit/income-work',
+      name: 'Income',
+      component: Income,
+    },
+
+    {
+      path: '/cockpit/integrated-operation',
+      name: 'IntegratedOperation',
+      component: IntegratedOperation,
+    },
+
+    {
+      path: '/cockpit/analysis',
+      name: 'operationalPerformance',
+      component: operationalPerformance,
+    },
+
+    {
+      path: '/cockpit/cockpit',
+      name: 'cockpitPage',
+      component: cockpitPage,
     },
     {
       path: '/care/historical-inquiry',

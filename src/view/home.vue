@@ -51,7 +51,7 @@
             </router-link>
           </div>
           <div class="list" v-lazy:background-image="cockpit">
-            <router-link to="">
+            <router-link to="/cockpit/cockpit">
             院长驾驶舱
             </router-link>
           </div>
