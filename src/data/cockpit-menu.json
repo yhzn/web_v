@@ -1,0 +1,292 @@
+[
+  {
+    "text":"运营绩效",
+    "active":false,
+    "subList":[
+      {
+        "href":"/cockpit/analysis",
+        "active":false,
+        "text":"运营分析导航"
+      },
+      {
+        "href":"/cockpit/integrated-operation",
+        "active":false,
+        "text":"综合运营分析"
+      },
+      {
+        "href":"/cockpit/income-work",
+        "active":false,
+        "text":"收入及工作量"
+      },
+      {
+        "href":"/medicaltechnology/hospital_gather",
+        "active":false,
+        "text":"绩效目标达成"
+      },
+      {
+        "href":"/medicaltechnology/hospital_gather",
+        "active":false,
+        "text":"运管助理报表"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"院长查询",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"院长月报"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"院长日报"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"临床医疗",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"门急诊"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"住院"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"手术"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"动态监控",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"全院动态"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"诊区动态"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"专题支持",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"药品耗材"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"费用变异分析"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"手术分析"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"绩效运管"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"医疗质量",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"医务查询导航"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"临床路径概览"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"等级评分"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"医保",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"全院医保概览"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"医保月报"
+      }
+
+    ]
+
+  },
+
+
+  {
+    "text":"主任查询",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"科室月报"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"门急诊"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"住院"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"手术"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"科室医保概览"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"医技",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"药学部"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"医学影像科"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"超声科"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"内镜室"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"体检科"
+      }
+    ]
+
+  },
+
+
+  {
+    "text":"人力资源",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"员工性质概览"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"科室类别概览"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"人员变动"
+      }
+
+    ]
+
+  },
+
+
+  {
+    "text":"报表中心",
+    "active":false,
+    "subList":[
+      {
+        "href":"/medicaltechnology/hospital_detail",
+        "active":false,
+        "text":"职能科室"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"临床科室"
+      },
+      {
+        "href":"/medicaltechnology/hospital_list",
+        "active":false,
+        "text":"医技科室"
+      }
+
+    ]
+
+  }
+
+
+
+]
+
+
