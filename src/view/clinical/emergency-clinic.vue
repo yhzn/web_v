@@ -1,7 +1,13 @@
 <style>
+  .eme-cli .img-one{
+    float:left;
+    margin:10px;
+    width:calc( 50% - 20px );
+    height:80px;
+  }
 </style>
 <template>
-  <div class="txt cont">
+  <div class="txt cont eme-cli">
     <head-con :headData="headData"></head-con>
     <div class="main">
       <img-list :imgData="imgData"></img-list>

@@ -1,3 +1,4 @@
+<script src="../../../dist/static/js/vendor.27058a3c4ad458c8ee76.js"></script>
 <style>
   .adverse-event .main{
     height:calc( 100vh - 100px );
@@ -46,28 +47,28 @@
   </div>
 </template>
 <script>
-  import headCon from '@/components/head.vue'
-  import footCon from '@/components/foot.vue'
-  import secLevel from '@/components/sec_level_menu.vue'
-  import flowP from '../../../static/image/adverse-event/flow.png'
-  import flowPTitle from '../../../static/image/medical/flow_title.png'
-  import banner from '../../../static/image/adverse-event/banner.png'
-  import bannerTitle from '../../../static/image/medical/banner_title.png'
+      import headCon from '@/components/head.vue'
+      import footCon from '@/components/foot.vue'
+      import secLevel from '@/components/sec_level_menu.vue'
+      import flowP from '../../../static/image/adverse-event/flow.png'
+      import flowPTitle from '../../../static/image/medical/flow_title.png'
+      import banner from '../../../static/image/adverse-event/banner.png'
+      import bannerTitle from '../../../static/image/medical/banner_title.png'
 
-  import secMenu from '@/data/adverse-event-menu'
-  import headData from '@/data/adverse-event-title'
-  let footBtnData={
-    fir:'功能描述',
-    sec:'流程图',
-    thr:'功能列表'
-  }
-  export default {
-    data () {
-      return {
-        headData,
-        footBtnData,
-        showPage:'fun',
-        flowP,
+      import secMenu from '@/data/adverse-event-menu'
+      import headData from '@/data/adverse-event-title'
+      let footBtnData={
+        fir:'功能描述',
+        sec:'流程图',
+        thr:'功能列表'
+      }
+      export default {
+        data () {
+          return {
+            headData,
+            footBtnData,
+            showPage:'fun',
+            flowP,
         flowPTitle,
         banner,
         bannerTitle,
