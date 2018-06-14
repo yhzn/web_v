@@ -169,6 +169,28 @@ import cockpitPage from '@/view/cockpit/cockpit'
 import operationalPerformance from '@/view/cockpit/analysis'
 import IntegratedOperation from '@/view/cockpit/integrated-operation'
 import Income from '@/view/cockpit/income-work'
+import PerformanceGoals from '@/view/cockpit/performance-goals'
+import PipelineReport from '@/view/cockpit/pipeline-report'
+import MonthlyReport from '@/view/cockpit/monthly-report'
+import DayReport from '@/view/cockpit/day-report'
+import OutpatientDepartment from '@/view/cockpit/outpatient-department'
+import Hospitalization from '@/view/cockpit/hospitalization'
+import Operation from '@/view/cockpit/operation'
+import HosptialDynamics from '@/view/cockpit/hosptial-dynamics'
+import AreaDynamics from '@/view/cockpit/area-dynamics'
+import DrugConsumables from '@/view/cockpit/Drug-consumables'
+import CostVariation from '@/view/cockpit/cost-variation'
+import SurgicalAnalysic from '@/view/cockpit/surgical-analysic'
+import PerformanceManagement from '@/view/cockpit/performance-management'
+import  MedicalInquiry from '@/view/cockpit/medical-inquiry'
+import  ClinicalPathway from '@/view/cockpit/clinical-pathway'
+import  GradeScore from '@/view/cockpit/grade-score'
+import  MedicalOverview from '@/view/cockpit/medical-overview'
+import  MedicalMonthly from '@/view/cockpit/medical-monthly'
+
+
+
+
 
 Vue.use(Router)
 export default new Router({
@@ -178,6 +200,114 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+
+    {
+      path: '/cockpit/medical-monthly',
+      name: 'MedicalMonthly',
+      component: MedicalMonthly,
+    },
+
+    {
+      path: '/cockpit/medical-overview',
+      name: 'MedicalOverview',
+      component: MedicalOverview,
+    },
+
+    {
+      path: '/cockpit/grade-score',
+      name: 'GradeScore',
+      component: GradeScore,
+    },
+
+    {
+      path: '/cockpit/clinical-pathway',
+      name: 'ClinicalPathway',
+      component: ClinicalPathway,
+    },
+
+    {
+      path: '/cockpit/medical-inquiry',
+      name: 'MedicalInquiry',
+      component: MedicalInquiry,
+    },
+
+    {
+      path: '/cockpit/performance-management',
+      name: 'PerformanceManagement',
+      component: PerformanceManagement,
+    },
+
+    {
+      path: '/cockpit/surgical-analysic',
+      name: 'SurgicalAnalysic',
+      component: SurgicalAnalysic,
+    },
+
+    {
+      path: '/cockpit/cost-variation',
+      name: 'CostVariation',
+      component: CostVariation,
+    },
+
+    {
+      path: '/cockpit/Drug-consumables',
+      name: 'DrugConsumables',
+      component: DrugConsumables,
+    },
+
+    {
+      path: '/cockpit/area-dynamics',
+      name: 'AreaDynamics',
+      component: AreaDynamics,
+    },
+
+    {
+      path: '/cockpit/hosptial-dynamics',
+      name: 'HosptialDynamics',
+      component: HosptialDynamics,
+    },
+
+    {
+      path: '/cockpit/operation',
+      name: 'Operation',
+      component: Operation,
+    },
+
+    {
+      path: '/cockpit/hospitalization',
+      name: 'Hospitalization',
+      component: Hospitalization,
+    },
+
+    {
+      path: '/cockpit/outpatient-department',
+      name: 'OutpatientDepartment',
+      component: OutpatientDepartment,
+    },
+
+    {
+      path: '/cockpit/monthly-report',
+      name: 'MonthlyReport',
+      component: MonthlyReport,
+    },
+
+    {
+      path: '/cockpit/day-report',
+      name: 'DayReport',
+      component: DayReport,
+    },
+
+    {
+      path: '/cockpit/pipeline-report',
+      name: 'PipelineReport',
+      component: PipelineReport,
+    },
+
+    {
+      path: '/cockpit/performance-goals',
+      name: 'PerformanceGoals',
+      component: PerformanceGoals,
     },
 
     {

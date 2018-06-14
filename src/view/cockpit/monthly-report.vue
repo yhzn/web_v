@@ -12,19 +12,15 @@
   import headCon from '@/components/head.vue'
   import headData from '@/data/cockpit-head-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
-  import searchInput from '../../../static/image/cockpit/operational performance/3.1.png'
-  import searchInputOne from '../../../static/image/cockpit/operational performance/3.2.png'
+  import searchInput from '../../../static/image/cockpit/DeanInquiries/1.1.png'
+  import searchInputOne from '../../../static/image/cockpit/DeanInquiries/1.2.png'
   import imgList from '@/components/new-img-list.vue'
   let imgData=[
     {
       headImg:rotateIcon,
-      headTitle:"全院收入分析",
-      img:[searchInput]
-    },
-    {
-      headImg:rotateIcon,
-      headTitle:"全院工作量分析",
-      img:[searchInputOne]
+      headTitle:"院长月报",
+      headSubTitle:"院区每月核心运营指标综合汇总(支持多院区)",
+      img:[searchInput,searchInputOne]
     }
   ]
   export default {

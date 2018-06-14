@@ -12,19 +12,14 @@
   import headCon from '@/components/head.vue'
   import headData from '@/data/cockpit-head-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
-  import searchInput from '../../../static/image/cockpit/operational performance/3.1.png'
-  import searchInputOne from '../../../static/image/cockpit/operational performance/3.2.png'
+  import searchInput from '../../../static/image/cockpit/ClinicalMedical/2.png'
   import imgList from '@/components/new-img-list.vue'
   let imgData=[
     {
       headImg:rotateIcon,
-      headTitle:"全院收入分析",
+      headTitle:"住院（出院统计）",
+      headSubTitle:"按出入院相应数据进行统计分析及对比监控",
       img:[searchInput]
-    },
-    {
-      headImg:rotateIcon,
-      headTitle:"全院工作量分析",
-      img:[searchInputOne]
     }
   ]
   export default {
