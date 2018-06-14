@@ -10,7 +10,7 @@
 </template>
 <script>
   import headCon from '@/components/head.vue'
-  import headData from '@/data/medical-head-title.json'
+  import headData from '@/data/cockpit-head-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
   import searchInput from '../../../static/image/cockpit/operational performance/2.png'
   import imgList from '@/components/new-img-list.vue'
