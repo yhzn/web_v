@@ -19,12 +19,12 @@
         "text":"收入及工作量"
       },
       {
-        "href":"/medicaltechnology/hospital_gather",
+        "href":"/cockpit/performance-goals",
         "active":false,
         "text":"绩效目标达成"
       },
       {
-        "href":"/medicaltechnology/hospital_gather",
+        "href":"/cockpit/pipeline-report",
         "active":false,
         "text":"运管助理报表"
       }
@@ -38,12 +38,12 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/monthly-report",
         "active":false,
         "text":"院长月报"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/day-report",
         "active":false,
         "text":"院长日报"
       }
@@ -57,17 +57,17 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/outpatient-department",
         "active":false,
         "text":"门急诊"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/hospitalization",
         "active":false,
         "text":"住院"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/operation",
         "active":false,
         "text":"手术"
       }
@@ -81,12 +81,12 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/hosptial-dynamics",
         "active":false,
         "text":"全院动态"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/area-dynamics",
         "active":false,
         "text":"诊区动态"
       }
@@ -100,22 +100,22 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/Drug-consumables",
         "active":false,
         "text":"药品耗材"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/cost-variation",
         "active":false,
         "text":"费用变异分析"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/surgical-analysic",
         "active":false,
         "text":"手术分析"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/performance-management",
         "active":false,
         "text":"绩效运管"
       }
@@ -129,17 +129,17 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/medical-inquiry",
         "active":false,
         "text":"医务查询导航"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/clinical-pathway",
         "active":false,
         "text":"临床路径概览"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/grade-score",
         "active":false,
         "text":"等级评分"
       }
@@ -153,12 +153,12 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/medical-overview",
         "active":false,
         "text":"全院医保概览"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/medical-monthly",
         "active":false,
         "text":"医保月报"
       }
