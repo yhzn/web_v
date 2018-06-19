@@ -275,16 +275,6 @@ export default new Router({
       component: medicalInsurance,
     },
     {
-      path: '/cockpit/operation',
-      name: 'Operation',
-      component: Operation,
-    },
-    {
-      path: '/cockpit/hospitalization',
-      name: 'Hospitalization',
-      component: Hospitalization,
-    },
-    {
       path: '/cockpit/emergency-department',
       name: 'emergencyDepartment',
       component: emergencyDepartment,
