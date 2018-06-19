@@ -173,27 +173,27 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/department-report",
         "active":false,
         "text":"科室月报"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/emergency-department",
         "active":false,
         "text":"门急诊"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/hospitalization",
         "active":false,
         "text":"住院"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/operation",
         "active":false,
         "text":"手术"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/medical-insurance",
         "active":false,
         "text":"科室医保概览"
       }
@@ -207,27 +207,27 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/pharmacy",
         "active":false,
         "text":"药学部"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/medical-imaging",
         "active":false,
         "text":"医学影像科"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/ultrasound",
         "active":false,
         "text":"超声科"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/endoscope-room",
         "active":false,
         "text":"内镜室"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/physical-examination",
         "active":false,
         "text":"体检科"
       }
@@ -241,17 +241,17 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/employee-overview",
         "active":false,
         "text":"员工性质概览"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/section-overview",
         "active":false,
         "text":"科室类别概览"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/personnel-changes",
         "active":false,
         "text":"人员变动"
       }
@@ -266,17 +266,17 @@
     "active":false,
     "subList":[
       {
-        "href":"/medicaltechnology/hospital_detail",
+        "href":"/cockpit/functional-departments",
         "active":false,
         "text":"职能科室"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/clinical-department",
         "active":false,
         "text":"临床科室"
       },
       {
-        "href":"/medicaltechnology/hospital_list",
+        "href":"/cockpit/medical-technologys",
         "active":false,
         "text":"医技科室"
       }
