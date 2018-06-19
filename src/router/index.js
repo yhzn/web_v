@@ -169,13 +169,12 @@ import cockpitPage from '@/view/cockpit/cockpit'
 import operationalPerformance from '@/view/cockpit/analysis'
 import IntegratedOperation from '@/view/cockpit/integrated-operation'
 import Income from '@/view/cockpit/income-work'
+
 import PerformanceGoals from '@/view/cockpit/performance-goals'
 import PipelineReport from '@/view/cockpit/pipeline-report'
 import MonthlyReport from '@/view/cockpit/monthly-report'
 import DayReport from '@/view/cockpit/day-report'
 import OutpatientDepartment from '@/view/cockpit/outpatient-department'
-import Hospitalization from '@/view/cockpit/hospitalization'
-import Operation from '@/view/cockpit/operation'
 import HosptialDynamics from '@/view/cockpit/hosptial-dynamics'
 import AreaDynamics from '@/view/cockpit/area-dynamics'
 import DrugConsumables from '@/view/cockpit/Drug-consumables'
@@ -188,8 +187,22 @@ import  GradeScore from '@/view/cockpit/grade-score'
 import  MedicalOverview from '@/view/cockpit/medical-overview'
 import  MedicalMonthly from '@/view/cockpit/medical-monthly'
 
-
-
+import departmentReport from '@/view/cockpit/department-report'
+import emergencyDepartment from '@/view/cockpit/emergency-department'
+import Hospitalization from '@/view/cockpit/hospitalization'
+import Operation from '@/view/cockpit/operation'
+import medicalInsurance from '@/view/cockpit/medical-insurance'
+import Pharmacy from '@/view/cockpit/pharmacy'
+import medicalImaging from '@/view/cockpit/medical-imaging'
+import Ultrasound from '@/view/cockpit/ultrasound'
+import endoscopeRoom from '@/view/cockpit/endoscope-room'
+import physicalExamination from '@/view/cockpit/physical-examination'
+import employeeOverview from '@/view/cockpit/employee-overview'
+import sectionOverview from '@/view/cockpit/section-overview'
+import personnelChanges from '@/view/cockpit/personnel-changes'
+import functionalDepartments from '@/view/cockpit/functional-departments'
+import clinicalDepartment from '@/view/cockpit/clinical-department'
+import medicalTechnologys from '@/view/cockpit/medical-technologys'
 
 
 Vue.use(Router)
@@ -201,7 +214,86 @@ export default new Router({
       component: HomePage,
       meta: { keepAlive: true }
     },
-
+    {
+      path: '/cockpit/medical-technologys',
+      name: 'medicalTechnologys',
+      component: medicalTechnologys,
+    },
+    {
+      path: '/cockpit/clinical-department',
+      name: 'clinicalDepartment',
+      component: clinicalDepartment,
+    },
+    {
+      path: '/cockpit/functional-departments',
+      name: 'functionalDepartments',
+      component: functionalDepartments,
+    },
+    {
+      path: '/cockpit/personnel-changes',
+      name: 'personnelChanges',
+      component: personnelChanges,
+    },
+    {
+      path: '/cockpit/section-overview',
+      name: 'sectionOverview',
+      component: sectionOverview,
+    },
+    {
+      path: '/cockpit/employee-overview',
+      name: 'employeeOverview',
+      component: employeeOverview,
+    },
+    {
+      path: '/cockpit/physical-examination',
+      name: 'physicalExamination',
+      component: physicalExamination,
+    },
+    {
+      path: '/cockpit/endoscope-room',
+      name: 'endoscopeRoom',
+      component: endoscopeRoom,
+    },
+    {
+      path: '/cockpit/ultrasound',
+      name: 'Ultrasound',
+      component: Ultrasound,
+    },
+    {
+      path: '/cockpit/medical-imaging',
+      name: 'medicalImaging',
+      component: medicalImaging,
+    },
+    {
+      path: '/cockpit/pharmacy',
+      name: 'Pharmacy',
+      component: Pharmacy,
+    },
+    {
+      path: '/cockpit/medical-insurance',
+      name: 'medicalInsurance',
+      component: medicalInsurance,
+    },
+    {
+      path: '/cockpit/operation',
+      name: 'Operation',
+      component: Operation,
+    },
+    {
+      path: '/cockpit/hospitalization',
+      name: 'Hospitalization',
+      component: Hospitalization,
+    },
+    {
+      path: '/cockpit/emergency-department',
+      name: 'emergencyDepartment',
+      component: emergencyDepartment,
+    },
+    {
+      path: '/cockpit/department-report',
+      name: 'departmentReport',
+      component: departmentReport,
+    },
     {
       path: '/cockpit/medical-monthly',
       name: 'MedicalMonthly',
