@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/department-scheduling/basic",
+    "active":false,
+    "text":"基础数据管理"
+  },
+  {
+    "href":"/department-scheduling/scheduling",
+    "active":false,
+    "text":"排班管理"
+  },
+  {
+    "href":"/department-scheduling/examine",
+    "active":false,
+    "text":"审核管理"
+  },
+  {
+    "href":"/department-scheduling/report",
+    "active":false,
+    "text":"报表管理"
+  },
+  {
+    "href":"/department-scheduling/file",
+    "active":false,
+    "text":"排班归档管理"
+  }
+]

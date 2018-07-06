@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/info-management/system",
+    "active":false,
+    "text":"考勤系统"
+  },  
+  {
+    "href":"/info-management/management",
+    "active":false,
+    "text":"运维管理"
+  },  
+  {
+    "href":"/info-management/achievements",
+    "active":false,
+    "text":"绩效考核"
+  }, 
+  {
+    "href":"/info-management/scheduling",
+    "active":false,
+    "text":"自动排班"
+  },
+  {
+    "href":"/info-management/configure",
+    "active":false,
+    "text":"配置中心"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "href":"/bonuses/category",
+    "active":false,
+    "text":"科室类别对应"
+  },
+  {
+    "href":"/bonuses/achievements",
+    "active":false,
+    "text":"绩效办下发"
+  },
+  {
+    "href":"/bonuses/distribution",
+    "active":false,
+    "text":"科室分配"
+  },
+  {
+    "href":"/bonuses/sum",
+    "active":false,
+    "text":"科室汇总金额"
+  },
+  {
+    "href":"/bonuses/post",
+    "active":false,
+    "text":"未提交科室"
+  },
+  {
+    "href":"/bonuses/maintain",
+    "active":false,
+    "text":"奖金/下发大类 维护"
+  }
+]

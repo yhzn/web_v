@@ -16,6 +16,9 @@
      font-size:12px;
      line-height:12px;
 }
+.txt .main .new-img-one{
+  padding:10px 10px;
+}
 </style>
 <template>
   <div class="wrapper">
@@ -30,7 +33,7 @@
             <p>{{item.headSubTitle}}</p>
           </div>
         </div>
-        <div class="img-one img-bg" v-for="img in item.img">
+        <div class="img-one new-img-one img-bg" v-for="img in item.img">
           <div>
               <img src="" alt="" v-lazy="img">
           </div>

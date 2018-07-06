@@ -204,7 +204,76 @@ import functionalDepartments from '@/view/cockpit/functional-departments'
 import clinicalDepartment from '@/view/cockpit/clinical-department'
 import medicalTechnologys from '@/view/cockpit/medical-technologys'
 
+import reportDisease from '@/view/report-disease/report-disease'
+import repBusiness from '@/view/report-disease/business'
+import repQuery from '@/view/report-disease/query'
 
+import infoManagement from '@/view/info-management/info-management'
+import infoSystem from '@/view/info-management/system'
+import infoMgm from '@/view/info-management/management'
+import infoAch from '@/view/info-management/achievements'
+import infoSch from '@/view/info-management/scheduling'
+import infoConfigure from '@/view/info-management/configure'
+
+import depScheduling from '@/view/department-scheduling/department-scheduling'
+import depBasic from '@/view/department-scheduling/basic'
+import depSubScheduling from '@/view/department-scheduling/scheduling'
+import depExamine from '@/view/department-scheduling/examine'
+import depReport from '@/view/department-scheduling/report'
+import depFile from '@/view/department-scheduling/file'
+
+import backboneManagement from '@/view/backbone-management/backbone-management'
+import backboneCheck from '@/view/backbone-management/check'
+import backboneLedger from '@/view/backbone-management/ledger'
+import backboneControl from '@/view/backbone-management/control'
+import backboneTreatment from '@/view/backbone-management/treatment'
+
+import bonuses from '@/view/bonuses/bonuses'
+import bonusesCategory from '@/view/bonuses/category'
+import bonusesAchievements from '@/view/bonuses/achievements'
+import bonusesDistribution from '@/view/bonuses/distribution'
+import bonusesSum from '@/view/bonuses/sum'
+import bonusesPost from '@/view/bonuses/post'
+import bonusesMaintain from '@/view/bonuses/maintain'
+
+import grossClass from '@/view/gross-class/gross-class'
+import grossRegister from '@/view/gross-class/register'
+import grossQuery from '@/view/gross-class/query'
+import grossCount from '@/view/gross-class/count'
+import grossSum from '@/view/gross-class/sum'
+import grossOperation from '@/view/gross-class/operation'
+import grossPatient from '@/view/gross-class/patient'
+import grossTest from '@/view/gross-class/test'
+
+import attendance from '@/view/attendance/attendance'
+import attCheck from '@/view/attendance/check'
+import attAnalysis from '@/view/attendance/analysis'
+import attConferenceRoom from '@/view/attendance/conference-room'
+import attGroup from '@/view/attendance/group'
+import attMeeting from '@/view/attendance/meeting'
+import attDevice from '@/view/attendance/device'
+
+import infoIntegration from '@/view/info-integration/info-integration'
+import infoOverview from '@/view/info-integration/overview'
+
+import send from '@/view/send/send'
+import sendDetail from '@/view/send/detail'
+import sendQuery from '@/view/send/query'
+import sendMechanism from '@/view/send/mechanism'
+import sendMaintain from '@/view/send/maintain'
+
+import recovery from '@/view/recovery/recovery'
+import recoveryBusiness from '@/view/recovery/business'
+import recoveryCount from '@/view/recovery/count'
+import recoveryMaintain from '@/view/recovery/maintain'
+import recoveryManage from '@/view/recovery/manage'
+
+import search from '@/view/search/search'
+import searchQuery from '@/view/search/query'
+import searchAssist from '@/view/search/assist'
+
+import qq from '@/view/qq/qq'
+import qqMsg from '@/view/qq/msg'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -213,6 +282,303 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/qq/qq',
+      name: 'qq',
+      component: qq,
+    },
+    {
+      path: '/qq/msg',
+      name: 'qqMsg',
+      component: qqMsg,
+    },
+    {
+      path: '/search/query',
+      name: 'searchQuery',
+      component: searchQuery,
+    },
+    {
+      path: '/search/assist',
+      name: 'searchAssist',
+      component: searchAssist,
+    },
+    {
+      path: '/search/search',
+      name: 'search',
+      component: search,
+    },
+    {
+      path: '/recovery/business',
+      name: 'recoveryBusiness',
+      component: recoveryBusiness,
+    },
+    {
+      path: '/recovery/count',
+      name: 'recoveryCount',
+      component: recoveryCount,
+    },
+    {
+      path: '/recovery/maintain',
+      name: 'recoveryMaintain',
+      component: recoveryMaintain,
+    },
+    {
+      path: '/recovery/manage',
+      name: 'recoveryManage',
+      component: recoveryManage,
+    },
+    {
+      path: '/recovery/recovery',
+      name: 'recovery',
+      component: recovery,
+    },
+    {
+      path: '/send/detail',
+      name: 'sendDetail',
+      component: sendDetail,
+    },
+    {
+      path: '/send/query',
+      name: 'sendQuery',
+      component: sendQuery,
+    },
+    {
+      path: '/send/mechanism',
+      name: 'sendMechanism',
+      component: sendMechanism,
+    },
+    {
+      path: '/send/maintain',
+      name: 'sendMaintain',
+      component: sendMaintain,
+    },
+    {
+      path: '/send/send',
+      name: 'send',
+      component: send,
+    },
+    {
+      path: '/info-integration/overview',
+      name: 'infoOverview',
+      component: infoOverview,
+    },
+    {
+      path: '/info-integration/info-integration',
+      name: 'infoIntegration',
+      component: infoIntegration,
+    },
+    {
+      path: '/attendance/check',
+      name: 'attCheck',
+      component: attCheck,
+    },
+    {
+      path: '/attendance/analysis',
+      name: 'attAnalysis',
+      component: attAnalysis,
+    },
+    {
+      path: '/attendance/conference-room',
+      name: 'attConferenceRoom',
+      component: attConferenceRoom,
+    },
+    {
+      path: '/attendance/group',
+      name: 'attGroup',
+      component: attGroup,
+    },
+    {
+      path: '/attendance/meeting',
+      name: 'attMeeting',
+      component: attMeeting,
+    },
+    {
+      path: '/attendance/device',
+      name: 'attDevice',
+      component: attDevice,
+    },
+
+
+    {
+      path: '/attendance/attendance',
+      name: 'attendance',
+      component: attendance,
+    },
+    {
+      path: '/gross-class/register',
+      name: 'grossRegister',
+      component: grossRegister,
+    },
+    {
+      path: '/gross-class/query',
+      name: 'grossQuery',
+      component: grossQuery,
+    },
+    {
+      path: '/gross-class/count',
+      name: 'grossCount',
+      component: grossCount,
+    },
+    {
+      path: '/gross-class/sum',
+      name: 'grossSum',
+      component: grossSum,
+    },
+    {
+      path: '/gross-class/operation',
+      name: 'grossOperation',
+      component: grossOperation,
+    },
+    {
+      path: '/gross-class/patient',
+      name: 'grossPatient',
+      component: grossPatient,
+    },
+    {
+      path: '/gross-class/test',
+      name: 'grossTest',
+      component: grossTest,
+    },
+    {
+      path: '/gross-class/gross-class',
+      name: 'grossClass',
+      component: grossClass,
+    },
+    {
+      path: '/bonuses/sum',
+      name: 'bonusesSum',
+      component: bonusesSum,
+    },
+    {
+      path: '/bonuses/post',
+      name: 'bonusesPost',
+      component: bonusesPost,
+    },
+    {
+      path: '/bonuses/maintain',
+      name: 'bonusesMaintain',
+      component: bonusesMaintain,
+    },
+    {
+      path: '/bonuses/category',
+      name: 'bonusesCategory',
+      component: bonusesCategory,
+    },
+    {
+      path: '/bonuses/achievements',
+      name: 'bonusesAchievements',
+      component: bonusesAchievements,
+    },
+    {
+      path: '/bonuses/distribution',
+      name: 'bonusesDistribution',
+      component: bonusesDistribution,
+    },
+    {
+      path: '/bonuses/bonuses',
+      name: 'bonuses',
+      component: bonuses,
+    },
+    {
+      path: '/backbone-management/check',
+      name: 'backboneCheck',
+      component: backboneCheck,
+    },
+    {
+      path: '/backbone-management/ledger',
+      name: 'backboneLedger',
+      component: backboneLedger,
+    },
+    {
+      path: '/backbone-management/control',
+      name: 'backboneControl',
+      component: backboneControl,
+    },
+    {
+      path: '/backbone-management/treatment',
+      name: 'backboneTreatment',
+      component: backboneTreatment,
+    },
+    {
+      path: '/backbone-management/backbone-management',
+      name: 'backboneManagement',
+      component: backboneManagement,
+    },
+    {
+      path: '/department-scheduling/basic',
+      name: 'depBasic',
+      component: depBasic,
+    },
+    {
+      path: '/department-scheduling/scheduling',
+      name: 'depSubScheduling',
+      component: depSubScheduling,
+    },
+    {
+      path: '/department-scheduling/examine',
+      name: 'depExamine',
+      component: depExamine,
+    },
+    {
+      path: '/department-scheduling/report',
+      name: 'depReport',
+      component: depReport,
+    },
+    {
+      path: '/department-scheduling/file',
+      name: 'depFile',
+      component: depFile,
+    },
+    {
+      path: '/department-scheduling/department-scheduling',
+      name: 'depScheduling',
+      component: depScheduling,
+    },
+    {
+      path: '/info-management/scheduling',
+      name: 'infoSch',
+      component: infoSch,
+    },
+    {
+      path: '/info-management/configure',
+      name: 'infoConfigure',
+      component: infoConfigure,
+    },
+    {
+      path: '/info-management/system',
+      name: 'infoSystem',
+      component: infoSystem,
+    },
+    {
+      path: '/info-management/management',
+      name: 'infoMgm',
+      component: infoMgm,
+    },
+    {
+      path: '/info-management/achievements',
+      name: 'infoAch',
+      component: infoAch,
+    },
+    {
+      path: '/info-manage/info-management',
+      name: 'infoManagement',
+      component: infoManagement,
+    },
+    {
+      path: '/report-disease/business',
+      name: 'repBusiness',
+      component: repBusiness,
+    },
+    {
+      path: '/report-disease/query',
+      name: 'repQuery',
+      component: repQuery,
+    },
+    {
+      path: '/report-disease/report-disease',
+      name: 'reportDisease',
+      component: reportDisease,
     },
     {
       path: '/cockpit/medical-technologys',

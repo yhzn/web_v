@@ -712,6 +712,7 @@
       goEnd (data) {
         this.iconActive=null;
         this.$router.push({path:data});
+//        window.location.replace()
       },
       async initData(start){
         this.$nextTick(()=>{

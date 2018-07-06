@@ -1,0 +1,22 @@
+[
+  {
+    "href":"/recovery/business",
+    "active":false,
+    "text":"业务管理"
+  },
+  {
+    "href":"/recovery/count",
+    "active":false,
+    "text":"统计分析"
+  },
+  {
+    "href":"/recovery/maintain",
+    "active":false,
+    "text":"维护"
+  },
+  {
+    "href":"/recovery/manage",
+    "active":false,
+    "text":"系统管理"
+  }
+]

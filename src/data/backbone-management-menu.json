@@ -1,0 +1,27 @@
+[
+  {
+    "href":"/backbone-management/check",
+    "active":false,
+    "text":"月质量自查表"
+  },
+  {
+    "href":"/backbone-management/ledger",
+    "active":false,
+    "text":"台账管理"
+  },
+  {
+    "href":"/backbone-management/control",
+    "active":false,
+    "text":"外部质控"
+  },
+  {
+    "href":"/backbone-management/treatment",
+    "active":false,
+    "text":"医干管理"
+  },
+  {
+    "href":"/department-scheduling/department-scheduling",
+    "active":false,
+    "text":"科室排班"
+  }
+]

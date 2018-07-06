@@ -1,0 +1,12 @@
+[
+  {
+    "href":"/search/query",
+    "active":false,
+    "text":"科研数据查询"
+  },
+  {
+    "href":"/search/assist",
+    "active":false,
+    "text":"临床诊断辅助"
+  }
+]

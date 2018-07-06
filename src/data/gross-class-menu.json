@@ -1,0 +1,37 @@
+[
+  {
+    "href":"/gross-class/register",
+    "active":false,
+    "text":"挂号分类系统"
+  },
+  {
+    "href":"/gross-class/query",
+    "active":false,
+    "text":"等待病人查询"
+  },
+  {
+    "href":"/gross-class/count",
+    "active":false,
+    "text":"空床/床位统计"
+  },
+  {
+    "href":"/gross-class/sum",
+    "active":false,
+    "text":"总值班汇总"
+  },
+  {
+    "href":"/gross-class/operation",
+    "active":false,
+    "text":"择期/急诊手术人数"
+  },
+  {
+    "href":"/gross-class/patient",
+    "active":false,
+    "text":"住院危重病人"
+  },
+  {
+    "href":"/gross-class/test",
+    "active":false,
+    "text":"体检人数"
+  }
+]

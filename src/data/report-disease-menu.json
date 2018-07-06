@@ -1,0 +1,12 @@
+[
+  {
+    "href":"/report-disease/business",
+    "active":false,
+    "text":"业务处理"
+  },
+  {
+    "href":"/report-disease/query",
+    "active":false,
+    "text":"指标查询"
+  }
+]

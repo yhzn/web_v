@@ -1,0 +1,32 @@
+[
+  {
+    "href":"/attendance/check",
+    "active":false,
+    "text":"会议考勤"
+  },
+  {
+    "href":"/attendance/analysis",
+    "active":false,
+    "text":"会议人员考勤统计分析"
+  },
+  {
+    "href":"/attendance/conference-room",
+    "active":false,
+    "text":"会议室管理"
+  },
+  {
+    "href":"/attendance/group",
+    "active":false,
+    "text":"人员分组管理"
+  },
+  {
+    "href":"/attendance/meeting",
+    "active":false,
+    "text":"会议管理"
+  },
+  {
+    "href":"/attendance/device",
+    "active":false,
+    "text":"设备管理"
+  }
+]

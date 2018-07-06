@@ -13,13 +13,17 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
+import 'swiper/dist/css/swiper.min.css'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueLazyLoad,{
   error:'./static/error.png',
   loading:'./static/image/loading.png'
 })
 
 Vue.use(ElementUI)
-Vue.config.productionTip = false
+Vue.use(VueAwesomeSwiper)
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({

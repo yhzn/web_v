@@ -1,0 +1,22 @@
+[
+  {
+    "href":"/send/detail",
+    "active":false,
+    "text":"病种分类明细"
+  },
+  {
+    "href":"/send/query",
+    "active":false,
+    "text":"案例分送查询"
+  },
+  {
+    "href":"/send/mechanism",
+    "active":false,
+    "text":"外院督查机构"
+  },
+  {
+    "href":"/send/maintain",
+    "active":false,
+    "text":"维护"
+  }
+]

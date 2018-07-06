@@ -16,6 +16,7 @@
     position: absolute;
     width:100%;
     top:50%;
+    color:#fff;
     transform:translateY(-50%);
   }
   .check .main p{
