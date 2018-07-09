@@ -41,8 +41,8 @@
         <div class="thr-list">
           <div class="text" v-lazy:background-image="lineBorderSec">
               <div>
-                <p>从经验管理走向</p>
-                <p>科学管理</p>
+                <p>从经验管理走</p>
+                <p>走向科学管理</p>
               </div>
           </div>
         </div>

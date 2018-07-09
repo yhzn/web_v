@@ -15,13 +15,12 @@
   import rotateIcon from '../../../static/image/icon/rotate.png'
   import searchInput from '../../../static/image/gross-class/1.1.png'
   import searchFir from '../../../static/image/gross-class/1.2.png'
-  import searchSec from '../../../static/image/gross-class/1.3.png'
   import imgList from '@/components/new-img-list.vue'
   let imgData=[
     {
       headImg:rotateIcon,
       headTitle:"挂号分类系统",
-      img:[searchInput,searchFir,searchSec]
+      img:[searchInput,searchFir]
     }
   ]
   export default {

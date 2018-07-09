@@ -156,7 +156,7 @@
               </div>
               <div class="right">
                 <span>医院康复科信息系统</span>
-                <span>康复科管理系统旨在帮助康复科医生更好地帮助病人进行康复治疗单的管理，方便医疗治疗的追溯</span>
+                <span>康复科信息系统旨在帮助康复科医生更好地帮助病人进行康复治疗单的管理，方便医疗治疗的追溯</span>
               </div>
 
             </router-link>
@@ -193,7 +193,7 @@
                 <img src="" alt="" v-lazy="icon8">
               </div>
               <div class="right">
-                <span>科室排班系统</span>
+                <span>科室排班管理系统</span>
                 <span>科室排班管理系统实现了医院医师、护士排班工作的自动化、电子化，方便和简化医院各科室的排班工作</span>
               </div>
 
