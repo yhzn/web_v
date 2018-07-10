@@ -13,12 +13,12 @@
   import headCon from '@/components/head.vue'
   import headData from '@/data/recovery-title.json'
   import rotateIcon from '../../../static/image/icon/rotate.png'
-  import searchInput from '../../../static/image/recovery/2.png'
+  import searchInput from '../../../static/image/recovery/5.png'
   import imgList from '@/components/new-img-list.vue'
   let imgData=[
     {
       headImg:rotateIcon,
-      headTitle:"统计分析",
+      headTitle:"病历",
       img:[searchInput]
     }
   ]

@@ -267,6 +267,8 @@ import recoveryBusiness from '@/view/recovery/business'
 import recoveryCount from '@/view/recovery/count'
 import recoveryMaintain from '@/view/recovery/maintain'
 import recoveryManage from '@/view/recovery/manage'
+import caseManage from '@/view/recovery/case'
+import formManage from '@/view/recovery/form'
 
 import search from '@/view/search/search'
 import searchQuery from '@/view/search/query'
@@ -282,6 +284,16 @@ export default new Router({
       name: 'HomePage',
       component: HomePage,
       meta: { keepAlive: true }
+    },
+    {
+      path: '/recovery/from',
+      name: 'formManage',
+      component: formManage,
+    },
+    {
+      path: '/recovery/case',
+      name: 'caseManage',
+      component: caseManage,
     },
     {
       path: '/qq/qq',

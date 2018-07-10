@@ -5,6 +5,23 @@
     "text":"业务管理"
   },
   {
+    "text":"病历",
+    "active":false,
+    "subList":[
+      {
+        "href":"/recovery/case",
+        "active":false,
+        "text":"病历"
+      },
+      {
+        "href":"/recovery/from",
+        "active":false,
+        "text":"评定表"
+      }
+    ]
+
+  },
+  {
     "href":"/recovery/count",
     "active":false,
     "text":"统计分析"

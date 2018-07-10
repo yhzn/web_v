@@ -119,14 +119,19 @@
         }
       },
       subMenu (index,subIndex,href) {
+        console.log(this.secMenu)
         if(!this.flag){return false}
         this.listState=null;
         // 初始化菜单选项
         this.secMenu.every(v => {
-          return !v.subList.some(s=>{
-            s.active=false;
-            return false
-          },this)
+          if(!!v.subList){
+            return !v.subList.some(s=>{
+              s.active=false;
+              return false
+
+            },this)
+          }
+          return true
         },this);
         // 选中项加标记
         this.secMenu[index].subList[subIndex].active=true;
