@@ -119,7 +119,6 @@
         }
       },
       subMenu (index,subIndex,href) {
-        console.log(this.secMenu)
         if(!this.flag){return false}
         this.listState=null;
         // 初始化菜单选项

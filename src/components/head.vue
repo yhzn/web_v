@@ -21,10 +21,25 @@
     top: 1px;
     font-size: 26px;
   }
-  .head div:nth-child(2){
+  .head div:nth-child(3){
     width: 200px;
     margin: 0 auto;
     text-align: center;
+  }
+  .head div:nth-child(2){
+    float:right;
+    padding:0;
+  }
+  .head div:nth-child(2) a{
+    display: block;
+    padding:5px;
+    padding-left:20px;
+    width:60px;
+    height:40px;
+  }
+  .head div:nth-child(2) img{
+     width:100%;
+     height:100%;
   }
 </style>
 <template>
@@ -32,6 +47,8 @@
       <div class="back" @click="routerGo">
         <span>&lt</span>返回
       </div>
+    <div>
+    </div>
     <div>
       {{headData.text}}
     </div>
